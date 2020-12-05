@@ -1,6 +1,7 @@
 import Router from 'vue-router'
 import Home from './views/Home.vue'
-import About from './views/About.vue'
+import Form from './views/Form.vue'
+import NotFound from './views/NotFound.vue'
 import Test from './views/Test.vue'
 import List from './views/List.vue'
 
@@ -13,19 +14,23 @@ export default new Router({
       component: Home
     },
     {
-      path: '/about',
-      name: 'about',
-      component: About
-      },
-      {
-        path: '/test',
-        name: 'test',
-        component: Test
-      },
-      {
-        path: '/list',
-        name: 'list',
-        component:List   
+      path: '/form',
+      name: 'form',
+      component: Form
+    },
+    {
+      path: '*',
+      component: NotFound
+    },
+    {
+      path: '/test',
+      name: 'test',
+      component: Test
+    },
+    {
+      path: '/list',
+      name: 'list',
+      component: List   
     }
   ]
 });
