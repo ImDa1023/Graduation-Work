@@ -4,11 +4,11 @@
       <h1>List</h1>
     </div>
     <ol>
-      <li><router-link to="details"></router-link>ジャンル</li>
-      <li><p>ジャンル</p></li>
-      <li><p>ジャンル</p></li>
-      <li><p>ジャンル</p></li>
-      <li><p>ジャンル</p></li>
+      <li><router-link to="details">ジャンル</router-link></li>
+      <li><router-link to="details">ジャンル</router-link></li>
+      <li><router-link to="details">ジャンル</router-link></li>
+      <li><router-link to="details">ジャンル</router-link></li>
+      <li><router-link to="details">ジャンル</router-link></li>
     </ol>
     <section>
       <h2>全曲リスト</h2>
@@ -50,10 +50,9 @@ li {
   border-radius: 15px;
 }
 
-p {
+li > a {
   color: white;
-  margin-left: 20%;
-  margin-top: 50%;
   font-size: 3rem;
+  display: block;
 }
 </style>
