@@ -2,7 +2,6 @@ import Router from 'vue-router'
 import Title from './views/Title.vue'
 import Form from './views/Form.vue'
 import NotFound from './views/NotFound.vue'
-import Test from './views/Test.vue'
 import List from './views/List.vue'
 import Details from './views/Details.vue'
 
@@ -22,11 +21,6 @@ export default new Router({
     {
       path: '*',
       component: NotFound
-    },
-    {
-      path: '/test',
-      name: 'test',
-      component: Test
     },
     {
       path: '/list',
