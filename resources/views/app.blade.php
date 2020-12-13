@@ -11,8 +11,6 @@
     <div id="app">
         <div id="nav">
           <router-link to="/">Title</router-link>
-          <router-link to="/home">Home</router-link>
-          <router-link to="/test">Test</router-link>
           <router-link to="/list">List</router-link>
         </div>
         <router-view/>

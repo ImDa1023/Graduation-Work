@@ -27,5 +27,6 @@ input {
   border-bottom: bold 1px;
   margin-bottom: 5px;
   background: none;
+  display: block;
 }
 </style>
