@@ -13,7 +13,7 @@
     <section>
       <h2>全曲リスト</h2>
     </section>
-    <router-link to="form">form</router-link>
+    <router-link to="add_form">form</router-link>
   </div>
 </template>
 

@@ -10,8 +10,8 @@
 
     <div id="app">
         <div id="nav">
-          <router-link to="/">Title</router-link>
           <router-link to="/list">List</router-link>
+          <router-link to="/setting">Setting</router-link>
         </div>
         <router-view/>
     </div>
