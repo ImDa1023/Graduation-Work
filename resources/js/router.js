@@ -3,8 +3,10 @@ import Title from './views/Title.vue'
 import First_Setting from './views/First_Setting.vue'
 import List from './views/List.vue'
 import Setting from './views/Setting.vue'
+import Notice from './views/Notice.vue'
 import Add_Form from './views/Add_Form.vue'
 import NotFound from './views/NotFound.vue'
+
 
 export default new Router({
   mode: 'history',
@@ -30,6 +32,11 @@ export default new Router({
       component: Setting
     },
     {
+      path: '/notice',
+      name: 'notice',
+      component:Notice
+    },
+    {
       path: '/add_form',
       name: 'add_form',
       component: Add_Form
@@ -37,6 +44,6 @@ export default new Router({
     {
       path: '*',
       component: NotFound
-    },
+    }
   ]
 });

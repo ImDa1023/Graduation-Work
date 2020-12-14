@@ -14,44 +14,13 @@ import router from './router'
 window.Vue = require('vue');
 Vue.use(VueRouter);
 
+Vue.component('original-component', require('./components/OriginalComponent.vue').default);
+Vue.component('manu', require('./components/Manu.vue').default);
 
-// import Mycomponent from './components/Details.vue';
-
-// export default {
-//     components: {
-//         Mycomponent
-//     },
-// }
-
-
-// new Vue({
-//     el: '#app1',
-//     component: {
-//         'local-component':tamesi
-//     }
-// })
-
-
-// new Vue({
-//     el: '#example',
-//     components: { Mycomponent },
-//     template: '<my-component></my-component>'
-// });
-// const Sample = {
-//    data() {
-//        return {
-//            msg: 'hello ELOOP!'
-//        }
-//    },
-//    template: '<div>{{ msg }}</div>'
-// }
-
-// new Vue({
-//    el: '#app',
-//    components: {
-//        'sample': Sample
-//    }
-// })
+const manu = new Vue({
+    el: '#manu',
+    router
+});
 
 /**
  * The following block of code may be used to automatically register your

@@ -7,15 +7,14 @@
 <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 </head>
 <body>
-
     <div id="app">
-        <div id="nav">
-          <router-link to="/list">List</router-link>
-          <router-link to="/setting">Setting</router-link>
-        </div>
         <router-view/>
     </div>
 
-<script src="{{ mix('js/app.js') }}"></script> 
+    <div id="manu">
+        <manu/>
+    </div>
+<script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>
+
