@@ -4,7 +4,6 @@ import First_Setting from './views/First_Setting.vue'
 import List from './views/List.vue'
 import Setting from './views/Setting.vue'
 import Add_Form from './views/Add_Form.vue'
-import Details from './views/Details.vue'
 import NotFound from './views/NotFound.vue'
 
 export default new Router({
@@ -34,11 +33,6 @@ export default new Router({
       path: '/add_form',
       name: 'add_form',
       component: Add_Form
-    },
-    {
-      path: '/details',
-      name: 'details',
-      component: Details
     },
     {
       path: '*',
