@@ -3,9 +3,8 @@
     <main>
       <RouterView />
     </main>
-    <footer>
-      <app-footer v-if="$route.name !== 'title'"></app-footer>
-    </footer>
+
+    <app-footer v-if="$route.name !== 'title'"></app-footer>
   </div>
 </template>
 <script>
