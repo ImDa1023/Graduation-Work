@@ -1,20 +1,9 @@
 <template>
   <div>
     <h1>タイトル</h1>
-    <!-- <my-component></my-component> -->
-    <div>
-      <Mycomponent></Mycomponent>
-    </div>
+    <router-link to="/list">Tap Start</router-link>
   </div>
 </template>
-<script>
-import Mycomponent from "../components/Details.vue";
 
-export default {
-  components: {
-    Mycomponent,
-  },
-};
-</script>
 
 
