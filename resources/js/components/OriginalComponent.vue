@@ -6,7 +6,7 @@
 export default {
   data() {
     return {
-      body: "Hello World!",
+      body: "Hello World",
     };
   },
   name: "original-component",
