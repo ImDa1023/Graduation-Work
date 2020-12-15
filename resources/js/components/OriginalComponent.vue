@@ -1,5 +1,5 @@
 <template>
-  <div class="container"><strong>Success!</strong> {{ body }}</div>
+  <div class="container"><strong>Success</strong> {{ body }}</div>
 </template>
 
 <script>
