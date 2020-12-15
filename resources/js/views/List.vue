@@ -14,8 +14,20 @@
       <h2>全曲リスト</h2>
     </section>
     <router-link to="add_form">form</router-link>
+    <div>
+      <Mycomponent></Mycomponent>
+    </div>
   </div>
 </template>
+<script>
+import Mycomponent from "../components/Details.vue";
+
+export default {
+  components: {
+    Mycomponent,
+  },
+};
+</script>
 
 <style>
 router-link {
