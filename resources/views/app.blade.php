@@ -10,13 +10,6 @@
 </head>
 <body>
     <div id="app"></div>
-        <!-- <router-view/> -->
-        <!-- <manu v-if="$route.name !== 'title'"></manu> -->
-        <!-- <manu></manu> -->
-
-    <!-- <div id="manu">
-        <manu v-if="$route.name !== 'title'"></manu>
-    </div> -->
 </body>
 <style>
     a{

@@ -1,6 +1,6 @@
 <template>
   <div>
     <h1>タイトル</h1>
-    <router-link to="/list">Tap Start</router-link>
+    <router-link to="/first_setting">Tap Start</router-link>
   </div>
 </template>

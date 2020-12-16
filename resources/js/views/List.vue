@@ -15,16 +15,16 @@
     </section>
     <router-link to="add_form">form</router-link>
     <div>
-      <Mycomponent></Mycomponent>
+      <Detail></Detail>
     </div>
   </div>
 </template>
 <script>
-import Mycomponent from "../components/Details.vue";
+import Detail from "../components/Details.vue";
 
 export default {
   components: {
-    Mycomponent,
+    Detail,
   },
 };
 </script>
