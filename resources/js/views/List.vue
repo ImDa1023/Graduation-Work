@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="header">
-      <h1>List</h1>
+      <h2>List</h2>
     </div>
     <ol>
       <li><router-link to="details">ジャンル</router-link></li>
