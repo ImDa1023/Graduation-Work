@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Add_Form</h1>
+    <h3>Add_Form</h3>
 
     <div class="tamesi">
       <label>曲名</label>
