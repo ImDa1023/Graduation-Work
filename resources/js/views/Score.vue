@@ -43,7 +43,7 @@
               <button class="btn btn-success">Edit</button>
             </td>
             <td>
-              <button class="btn btn-danger">Delete</button>
+              <button class="btn btn-danger" v-on:click="deleteScorelist(scorelist.id)">Delete</button>
             </td>
           </tr>
         </tbody>
@@ -70,13 +70,13 @@ export default {
         this.scorelists = res.data;
       });
     },
-    deleteScorelists() {
+    deleteScorelist(id) {
       axios.delete("/api/scores" + id).then((res) => {
         this.getScorelists();
       });
     },
   },
-  mounted() {
+  mounted () {
     this.getScorelists();
   },
   components: {

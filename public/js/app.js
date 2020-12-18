@@ -2124,7 +2124,7 @@ __webpack_require__.r(__webpack_exports__);
         _this.scorelists = res.data;
       });
     },
-    deleteScorelists: function deleteScorelists() {
+    deleteScorelist: function deleteScorelist(id) {
       var _this2 = this;
 
       axios["delete"]("/api/scores" + id).then(function (res) {
@@ -39339,7 +39339,20 @@ var render = function() {
                 _vm._v(" "),
                 _vm._m(4, true),
                 _vm._v(" "),
-                _vm._m(5, true)
+                _c("td", [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-danger",
+                      on: {
+                        click: function($event) {
+                          return _vm.deleteScorelist(scorelist.id)
+                        }
+                      }
+                    },
+                    [_vm._v("Delete")]
+                  )
+                ])
               ])
             }),
             0
@@ -39409,14 +39422,6 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("td", [
       _c("button", { staticClass: "btn btn-success" }, [_vm._v("Edit")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("td", [
-      _c("button", { staticClass: "btn btn-danger" }, [_vm._v("Delete")])
     ])
   }
 ]
@@ -55765,8 +55770,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\mynam\Graduation-Work\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\mynam\Graduation-Work\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\daiki\LaravelWork\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\daiki\LaravelWork\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
