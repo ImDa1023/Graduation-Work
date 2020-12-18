@@ -16,3 +16,9 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/scores', 'ScorelistController@index');
+Route::post('/scores', 'ScorelistController@store');
+Route::get('/scores/{score}', 'ScorelistController@show');
+Route::put('/scores/{score}', 'ScorelistController@update');
+Route::delete('/scores/{score}', 'ScorelistController@destroy');
