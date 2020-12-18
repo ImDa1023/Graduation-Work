@@ -6582,7 +6582,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "\nbody {\r\n  background-color: #f6f6f6;\n}\nh2 {\r\n  font-size: 3.5rem;\r\n  color: #101748;\r\n  text-align: center;\r\n  border-bottom: solid 1px;\n}\r\n", ""]);
+exports.push([module.i, "\nbody {\r\n  background-color: #f6f6f6;\n}\nh2 {\r\n  font-size: 2.5rem;\r\n  color: #101748;\r\n  text-align: center;\r\n  box-shadow: 1px -5px 20px 0px #cacacab9;\r\n  font-family: \"\\6E90\\30CE\\89D2\\30B4\\30B7\\30C3\\30AF\";\r\n  font-weight: 550;\n}\r\n", ""]);
 
 // exports
 
@@ -39230,9 +39230,16 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("h2", [_vm._v("お知らせ")])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [_c("h2", [_vm._v("お知らせ")])])
+  }
+]
 render._withStripped = true
 
 
@@ -39446,9 +39453,16 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("h2", [_vm._v("管理")])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [_c("h2", [_vm._v("管理")])])
+  }
+]
 render._withStripped = true
 
 
@@ -55770,8 +55784,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\daiki\LaravelWork\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\daiki\LaravelWork\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\mynam\Graduation-Work\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\mynam\Graduation-Work\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
