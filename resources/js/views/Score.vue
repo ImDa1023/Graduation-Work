@@ -29,13 +29,13 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="score in scores">
-            <th scope="row">{{ score.id }}</th>
-            <td>{{ score.title }}</td>
-            <td>{{ scpre.artist }}</td>
-            <td>{{ score.composer }}</td>
-            <td>{{ score.arranger}}</td>
-            <td>{{ score.publisher }}</td>
+          <tr v-for="scorelist in scorelists">
+            <th scope="row">{{ scorelist.id }}</th>
+            <td>{{ scorelist.title }}</td>
+            <td>{{ scorelist.artist }}</td>
+            <td>{{ scorelist.composer }}</td>
+            <td>{{ scorelist.arranger}}</td>
+            <td>{{ scorelist.publisher }}</td>
             <td>
               <button class="btn btn-primary">Show</button>
             </td>
@@ -62,19 +62,25 @@ import Detail from "../components/Details.vue";
 export default {
   data: function() {
     return {
-      scores: []
+      scorelists: []
     }
   },
   methods: {
-    getScores() {
+    getScorelists() {
       axios.get('/api/scores')
       .then((res) => {
-        this.scores = res.data;
+        this.scorelists = res.data;
+      });
+    },
+    deleteScorelists(){
+      axios.delete('/api/scores' + id)
+      .then((res) => {
+        this.getScorelists();
       });
     }
   },
   mounted() {
-    this.getScores();
+    this.getScorelists();
   },
   components: {
     Detail,

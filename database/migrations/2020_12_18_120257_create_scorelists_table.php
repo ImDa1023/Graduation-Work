@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateScoresTable extends Migration
+class CreateScorelistsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,13 @@ class CreateScoresTable extends Migration
      */
     public function up()
     {
-        Schema::create('scores', function (Blueprint $table) {
+        Schema::create('scorelists', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('title', 100);
-            $table->string('artist', 100);
-            $table->string('composer', 100);
-            $table->string('arranger', 100);
-            $table->string('publisher', 100);
+            $table->string('title');
+            $table->string('artist');
+            $table->string('composer');
+            $table->string('arranger');
+            $table->string('publisher');
             $table->timestamps();
         });
     }
@@ -31,6 +31,6 @@ class CreateScoresTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('scores');
+        Schema::dropIfExists('scorelists');
     }
 }
