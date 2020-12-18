@@ -7,11 +7,10 @@
 require('./bootstrap');
 
 import Vue from 'vue';
-// import VueRouter from 'vue-router';
 import router from './router'
 import App from './App.vue'
 window.Vue = require('vue');
-// Vue.use(VueRouter);
+
 
 const app = new Vue({
     el: '#app',
@@ -20,21 +19,6 @@ const app = new Vue({
      template: '<App />'
 });
 
-// Vue.component('original-component', require('./components/OriginalComponent.vue').default);
-// Vue.component('manu', require('./components/Manu.vue').default);
-
-// import Manu from "./components/Manu.vue";
-
-// export default {
-//   components: {
-//     Manu,
-//   },
-// };
-
-// const manu = new Vue({
-//     el: '#manu',
-//     router
-// });
 
 /**
  * The following block of code may be used to automatically register your

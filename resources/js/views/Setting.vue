@@ -1,3 +1,3 @@
 <template>
-  <h2>setting</h2>
+  <h2>管理</h2>
 </template>
