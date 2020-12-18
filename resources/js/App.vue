@@ -10,7 +10,7 @@
   </div>
 </template>
 <script>
-import Footer from "./components/Manu.vue";
+import Footer from "./components/Menu.vue";
 export default {
   name: "app",
   components: {
@@ -18,3 +18,15 @@ export default {
   },
 };
 </script>
+
+<style>
+body {
+  background-color: #f6f6f6;
+}
+h2 {
+  font-size: 3.5rem;
+  color: #101748;
+  text-align: center;
+  border-bottom: solid 1px;
+}
+</style>

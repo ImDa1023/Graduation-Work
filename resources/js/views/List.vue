@@ -40,10 +40,6 @@ h1 {
   text-align: center;
   font-size: 3rem;
 }
-.header {
-  border-bottom: solid 1px;
-  margin-bottom: 10%;
-}
 ol {
   scroll-snap-type: x mandatory;
   white-space: nowrap;

@@ -1,15 +1,3 @@
 <template>
-  <div id="Example">
-    <Logo />
-  </div>
+  <h2>お知らせ</h2>
 </template>
-<script>
-import Logo from "../components/icons/I_setting.vue";
-
-export default {
-  name: "Example",
-  components: {
-    Logo,
-  },
-};
-</script>
