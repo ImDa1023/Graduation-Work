@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <nav>
+    <nav id="F_Menu">
       <ul class="nav-list">
         <li class="nav-list_child">
           <router-link to="/setting">
@@ -8,7 +8,7 @@
           </router-link>
         </li>
         <li class="nav-list_child">
-          <router-link to="/list">
+          <router-link to="/score">
             <List />
           </router-link>
         </li>
@@ -28,7 +28,7 @@ import Notice from "./icons/I_notice.vue";
 
 // import SVGElement from "./Icon.vue";
 export default {
-  name: "menu",
+  name: "F_Menu",
   components: {
     Setting,
     List,
