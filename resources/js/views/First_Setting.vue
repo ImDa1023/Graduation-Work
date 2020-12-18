@@ -1,3 +1,6 @@
 <template>
-  <h2>first setting2</h2>
+  <div>
+    <h2>初期設定</h2>
+    <router-link to="/score">score-home</router-link>
+  </div>
 </template>
