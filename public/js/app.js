@@ -38915,7 +38915,7 @@ var render = function() {
         _c(
           "li",
           { staticClass: "nav-list_child" },
-          [_c("router-link", { attrs: { to: "/list" } }, [_c("List")], 1)],
+          [_c("router-link", { attrs: { to: "/score" } }, [_c("List")], 1)],
           1
         ),
         _vm._v(" "),

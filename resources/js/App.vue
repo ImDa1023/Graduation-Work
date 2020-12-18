@@ -10,11 +10,11 @@
   </div>
 </template>
 <script>
-import Footer from "./components/Menu.vue";
+import F_Menu from "./components/F_Menu.vue";
 export default {
   name: "app",
   components: {
-    "app-footer": Footer,
+    "app-footer": F_Menu,
   },
 };
 </script>

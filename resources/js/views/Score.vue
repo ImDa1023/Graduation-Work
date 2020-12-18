@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="header">
-      <h2>List</h2>
+      <h2>楽譜リスト</h2>
     </div>
     <ol>
       <li><router-link to="details">ジャンル</router-link></li>
@@ -34,7 +34,7 @@
             <td>{{ scorelist.title }}</td>
             <td>{{ scorelist.artist }}</td>
             <td>{{ scorelist.composer }}</td>
-            <td>{{ scorelist.arranger}}</td>
+            <td>{{ scorelist.arranger }}</td>
             <td>{{ scorelist.publisher }}</td>
             <td>
               <button class="btn btn-primary">Show</button>
@@ -58,26 +58,23 @@
 <script>
 import Detail from "../components/Details.vue";
 
-
 export default {
-  data: function() {
+  data: function () {
     return {
-      scorelists: []
-    }
+      scorelists: [],
+    };
   },
   methods: {
     getScorelists() {
-      axios.get('/api/scores')
-      .then((res) => {
+      axios.get("/api/scores").then((res) => {
         this.scorelists = res.data;
       });
     },
-    deleteScorelists(){
-      axios.delete('/api/scores' + id)
-      .then((res) => {
+    deleteScorelists() {
+      axios.delete("/api/scores" + id).then((res) => {
         this.getScorelists();
       });
-    }
+    },
   },
   mounted() {
     this.getScorelists();
@@ -85,7 +82,7 @@ export default {
   components: {
     Detail,
   },
-}
+};
 </script>
 
 <style scoped>
@@ -99,10 +96,7 @@ h1 {
   text-align: center;
   font-size: 3rem;
 }
-.header {
-  border-bottom: solid 1px;
-  margin-bottom: 10%;
-}
+
 ol {
   scroll-snap-type: x mandatory;
   white-space: nowrap;
