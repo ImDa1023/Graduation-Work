@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Title from './views/Title.vue'
 import First_Setting from './views/First_Setting.vue'
-import List from './views/List.vue'
+import Score from './views/Score.vue'
 import Setting from './views/Setting.vue'
 import Notice from './views/Notice.vue'
 import Add_Form from './components/Add_Form.vue'
@@ -22,9 +22,9 @@ const routes = [
       component: First_Setting
     },
     {
-      path: '/list',
-      name: 'list',
-      component: List   
+      path: '/score',
+      name: 'score.list',
+      component: Score
     },
     {
       path: '/setting',

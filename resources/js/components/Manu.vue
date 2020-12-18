@@ -17,7 +17,7 @@
 </template>
 <script>
 import Setting from "../components/icons/I_setting.vue";
-import List from "../components/icons/I_list.vue";
+import Score from "../components/icons/I_list.vue";
 import Notice from "../components/icons/I_notice.vue";
 
 // import SVGElement from "./Icon.vue";
@@ -25,7 +25,7 @@ export default {
   name: "manu",
   components: {
     Setting,
-    List,
+    Score,
     Notice,
   },
 };
