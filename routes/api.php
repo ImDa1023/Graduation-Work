@@ -17,8 +17,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/scores', 'ScoreController@index');
-Route::post('/scores', 'ScoreController@store');
-Route::get('/scores/{score}', 'ScoreController@show');
-Route::put('scores/{score}', 'ScoreController@update');
-Route::delete('scores/{score}', 'ScoreController@destroy');
+Route::get('/scores', 'ScorelistController@index');
+Route::post('/scores', 'ScorelistController@store');
+Route::get('/scores/{score}', 'ScorelistController@show');
+Route::put('/scores/{score}', 'ScorelistController@update');
+Route::delete('/scores/{score}', 'ScorelistController@destroy');

@@ -1974,14 +1974,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      score: {}
+      scorelist: {}
     };
   },
   methods: {
     submit: function submit() {
       var _this = this;
 
-      axios.post('/api/scores', this.score).then(function (res) {
+      axios.post('/api/scores', this.scorelist).then(function (res) {
         _this.$router.push({
           name: 'score.list'
         });
@@ -2132,20 +2132,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      scores: []
+      scorelists: []
     };
   },
   methods: {
-    getScores: function getScores() {
+    getScorelists: function getScorelists() {
       var _this = this;
 
       axios.get('/api/scores').then(function (res) {
-        _this.scores = res.data;
+        _this.scorelists = res.data;
+      });
+    },
+    deleteScorelists: function deleteScorelists() {
+      var _this2 = this;
+
+      axios["delete"]('/api/scores' + id).then(function (res) {
+        _this2.getScorelists();
       });
     }
   },
   mounted: function mounted() {
-    this.getScores();
+    this.getScorelists();
   },
   components: {
     Detail: _components_Details_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
@@ -38649,19 +38656,19 @@ var render = function() {
                   {
                     name: "model",
                     rawName: "v-model",
-                    value: _vm.score.title,
-                    expression: "score.title"
+                    value: _vm.scorelist.title,
+                    expression: "scorelist.title"
                   }
                 ],
                 staticClass: "col-sm-9 form-control",
                 attrs: { type: "text", id: "title" },
-                domProps: { value: _vm.score.title },
+                domProps: { value: _vm.scorelist.title },
                 on: {
                   input: function($event) {
                     if ($event.target.composing) {
                       return
                     }
-                    _vm.$set(_vm.score, "title", $event.target.value)
+                    _vm.$set(_vm.scorelist, "title", $event.target.value)
                   }
                 }
               })
@@ -38682,19 +38689,19 @@ var render = function() {
                   {
                     name: "model",
                     rawName: "v-model",
-                    value: _vm.score.artist,
-                    expression: "score.artist"
+                    value: _vm.scorelist.artist,
+                    expression: "scorelist.artist"
                   }
                 ],
                 staticClass: "col-sm-9 form-control",
                 attrs: { type: "text", id: "artist" },
-                domProps: { value: _vm.score.artist },
+                domProps: { value: _vm.scorelist.artist },
                 on: {
                   input: function($event) {
                     if ($event.target.composing) {
                       return
                     }
-                    _vm.$set(_vm.score, "artist", $event.target.value)
+                    _vm.$set(_vm.scorelist, "artist", $event.target.value)
                   }
                 }
               })
@@ -38715,19 +38722,19 @@ var render = function() {
                   {
                     name: "model",
                     rawName: "v-model",
-                    value: _vm.score.composer,
-                    expression: "score.composer"
+                    value: _vm.scorelist.composer,
+                    expression: "scorelist.composer"
                   }
                 ],
                 staticClass: "col-sm-9 form-control",
                 attrs: { type: "text", id: "composer" },
-                domProps: { value: _vm.score.composer },
+                domProps: { value: _vm.scorelist.composer },
                 on: {
                   input: function($event) {
                     if ($event.target.composing) {
                       return
                     }
-                    _vm.$set(_vm.score, "composer", $event.target.value)
+                    _vm.$set(_vm.scorelist, "composer", $event.target.value)
                   }
                 }
               })
@@ -38748,19 +38755,19 @@ var render = function() {
                   {
                     name: "model",
                     rawName: "v-model",
-                    value: _vm.score.arranger,
-                    expression: "score.arranger"
+                    value: _vm.scorelist.arranger,
+                    expression: "scorelist.arranger"
                   }
                 ],
                 staticClass: "col-sm-9 form-control",
                 attrs: { type: "text", id: "arranger" },
-                domProps: { value: _vm.score.arranger },
+                domProps: { value: _vm.scorelist.arranger },
                 on: {
                   input: function($event) {
                     if ($event.target.composing) {
                       return
                     }
-                    _vm.$set(_vm.score, "arranger", $event.target.value)
+                    _vm.$set(_vm.scorelist, "arranger", $event.target.value)
                   }
                 }
               })
@@ -38781,19 +38788,19 @@ var render = function() {
                   {
                     name: "model",
                     rawName: "v-model",
-                    value: _vm.score.publisher,
-                    expression: "score.publisher"
+                    value: _vm.scorelist.publisher,
+                    expression: "scorelist.publisher"
                   }
                 ],
                 staticClass: "col-sm-9 form-control",
                 attrs: { type: "text", id: "publisher" },
-                domProps: { value: _vm.score.publisher },
+                domProps: { value: _vm.scorelist.publisher },
                 on: {
                   input: function($event) {
                     if ($event.target.composing) {
                       return
                     }
-                    _vm.$set(_vm.score, "publisher", $event.target.value)
+                    _vm.$set(_vm.scorelist, "publisher", $event.target.value)
                   }
                 }
               })
@@ -39282,21 +39289,21 @@ var render = function() {
           _vm._v(" "),
           _c(
             "tbody",
-            _vm._l(_vm.scores, function(score) {
+            _vm._l(_vm.scorelists, function(scorelist) {
               return _c("tr", [
                 _c("th", { attrs: { scope: "row" } }, [
-                  _vm._v(_vm._s(score.id))
+                  _vm._v(_vm._s(scorelist.id))
                 ]),
                 _vm._v(" "),
-                _c("td", [_vm._v(_vm._s(score.title))]),
+                _c("td", [_vm._v(_vm._s(scorelist.title))]),
                 _vm._v(" "),
-                _c("td", [_vm._v(_vm._s(_vm.scpre.artist))]),
+                _c("td", [_vm._v(_vm._s(scorelist.artist))]),
                 _vm._v(" "),
-                _c("td", [_vm._v(_vm._s(score.composer))]),
+                _c("td", [_vm._v(_vm._s(scorelist.composer))]),
                 _vm._v(" "),
-                _c("td", [_vm._v(_vm._s(score.arranger))]),
+                _c("td", [_vm._v(_vm._s(scorelist.arranger))]),
                 _vm._v(" "),
-                _c("td", [_vm._v(_vm._s(score.publisher))]),
+                _c("td", [_vm._v(_vm._s(scorelist.publisher))]),
                 _vm._v(" "),
                 _vm._m(3, true),
                 _vm._v(" "),
