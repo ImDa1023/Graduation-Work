@@ -98,7 +98,7 @@ li > a {
 }
 </style>
 <script>
-import Detail from "../Score-Details.vue";
+import Detail from "../../plugins/materials/molecules/Score-Details.vue";
 
 export default {
   data: function () {

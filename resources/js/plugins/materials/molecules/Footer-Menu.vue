@@ -4,17 +4,17 @@
       <ul class="nav-list">
         <li class="nav-list_child">
           <router-link to="/setting">
-            <I_setting />
+            <Setting-icon />
           </router-link>
         </li>
         <li class="nav-list_child">
           <router-link to="/score">
-            <I_list />
+            <List-icon />
           </router-link>
         </li>
         <li class="nav-list_child">
           <router-link to="/notice">
-            <I_notice />
+            <Notice-icon />
           </router-link>
         </li>
       </ul>
