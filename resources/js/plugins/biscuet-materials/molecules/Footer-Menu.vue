@@ -4,17 +4,17 @@
       <ul class="nav-list">
         <li class="nav-list_child">
           <router-link to="/setting">
-            <Setting />
+            <I_setting />
           </router-link>
         </li>
         <li class="nav-list_child">
           <router-link to="/score">
-            <List />
+            <I_list />
           </router-link>
         </li>
         <li class="nav-list_child">
           <router-link to="/notice">
-            <Notice />
+            <I_notice />
           </router-link>
         </li>
       </ul>
@@ -22,18 +22,18 @@
   </footer>
 </template>
 <script>
-import Setting from "./icons/I_setting.vue";
-import List from "./icons/I_list.vue";
-import Notice from "./icons/I_notice.vue";
+// import Setting from "./icons/I_setting.vue";
+// import List from "./icons/I_list.vue";
+// import Notice from "./icons/I_notice.vue";
 
 // import SVGElement from "./Icon.vue";
 export default {
-  name: "F_Menu",
-  components: {
-    Setting,
-    List,
-    Notice,
-  },
+  // name: "F_Menu",
+  // components: {
+  //   Setting,
+  //   List,
+  //   Notice,
+  // },
 };
 </script>
 

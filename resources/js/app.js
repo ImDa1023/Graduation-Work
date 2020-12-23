@@ -10,7 +10,9 @@ import Vue from 'vue';
 import router from './router'
 import App from './App.vue'
 window.Vue = require('vue');
+import BiscuetMaterials from './plugins'
 
+Vue.use(BiscuetMaterials)
 
 const app = new Vue({
     el: '#app',

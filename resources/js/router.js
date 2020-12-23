@@ -1,12 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Title from './views/Title.vue'
-import First_Setting from './views/First_Setting.vue'
-import Score from './views/Score.vue'
-import Setting from './views/Setting.vue'
-import Notice from './views/Notice.vue'
+import Title from './components/pages/Title.vue'
+import First_Setting from './components/pages/First_Setting.vue'
+import Score from './components/pages/Score.vue'
+import Setting from './components/pages/Setting.vue'
+import Notice from './components/pages/Notice.vue'
 import Add_Form from './components/Add_Form.vue'
-import NotFound from './views/NotFound.vue'
+import NotFound from './components/pages/NotFound.vue'
 
 Vue.use(VueRouter)
 
