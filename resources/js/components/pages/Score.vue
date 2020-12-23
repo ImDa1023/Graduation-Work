@@ -43,7 +43,12 @@
               <button class="btn btn-success">Edit</button>
             </td>
             <td>
-              <button class="btn btn-danger" v-on:click="deleteScorelist(scorelist.id)">Delete</button>
+              <button
+                class="btn btn-danger"
+                v-on:click="deleteScorelist(scorelist.id)"
+              >
+                Delete
+              </button>
             </td>
           </tr>
         </tbody>
@@ -55,36 +60,6 @@
     </div>
   </div>
 </template>
-<script>
-import Detail from "../components/Details.vue";
-
-export default {
-  data: function () {
-    return {
-      scorelists: [],
-    };
-  },
-  methods: {
-    getScorelists() {
-      axios.get("/api/scores").then((res) => {
-        this.scorelists = res.data;
-      });
-    },
-    deleteScorelist(id) {
-      axios.delete("/api/scores" + id).then((res) => {
-        this.getScorelists();
-      });
-    },
-  },
-  mounted () {
-    this.getScorelists();
-  },
-  components: {
-    Detail,
-  },
-};
-</script>
-
 <style scoped>
 router-link {
   font-size: 3rem;
@@ -122,3 +97,33 @@ li > a {
   display: block;
 }
 </style>
+<script>
+import Detail from "../Score-Details.vue";
+
+export default {
+  data: function () {
+    return {
+      scorelists: [],
+    };
+  },
+  methods: {
+    getScorelists() {
+      axios.get("/api/scores").then((res) => {
+        this.scorelists = res.data;
+      });
+    },
+    deleteScorelist(id) {
+      axios.delete("/api/scores" + id).then((res) => {
+        this.getScorelists();
+      });
+    },
+  },
+  mounted() {
+    this.getScorelists();
+  },
+  components: {
+    Detail,
+  },
+};
+</script>
+

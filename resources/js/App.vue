@@ -4,21 +4,11 @@
       <RouterView />
     </main>
 
-    <app-footer
+    <Footer-Menu
       v-if="$route.name !== 'title' && $route.name !== 'first_setting'"
-    ></app-footer>
+    ></Footer-Menu>
   </div>
 </template>
-<script>
-import F_Menu from "./components/F_Menu.vue";
-export default {
-  name: "app",
-  components: {
-    "app-footer": F_Menu,
-  },
-};
-</script>
-
 <style>
 body {
   background-color: #f6f6f6;
