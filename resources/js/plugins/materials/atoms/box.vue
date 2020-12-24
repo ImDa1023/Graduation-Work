@@ -3,8 +3,8 @@
 </template>
 <style scoped>
 div {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 150px;
   background-color: black;
 }
 </style>
