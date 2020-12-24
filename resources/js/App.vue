@@ -4,9 +4,9 @@
       <RouterView />
     </main>
 
-    <Footer-Menu
-      v-if="$route.name !== 'title' && $route.name !== 'first_setting'"
-    ></Footer-Menu>
+    <footer v-if="$route.name !== 'title' && $route.name !== 'first-setting'">
+      <Footer-Menu></Footer-Menu>
+    </footer>
   </div>
 </template>
 <style>
