@@ -39111,7 +39111,7 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _c("router-link", { attrs: { to: "add_form" } }, [_vm._v("form")]),
+      _c("router-link", { attrs: { to: "add-form" } }, [_vm._v("form")]),
       _vm._v(" "),
       _c("div", [_c("Detail")], 1)
     ],
@@ -56603,8 +56603,8 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Graduation-Work\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Graduation-Work\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\daiki\LaravelWork\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\daiki\LaravelWork\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

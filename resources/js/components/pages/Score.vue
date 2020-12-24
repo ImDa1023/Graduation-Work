@@ -54,7 +54,7 @@
         </tbody>
       </table>
     </div>
-    <router-link to="add_form">form</router-link>
+    <router-link to="add-form">form</router-link>
     <div>
       <Detail></Detail>
     </div>
