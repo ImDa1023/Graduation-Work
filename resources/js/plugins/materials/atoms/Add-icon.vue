@@ -1,11 +1,6 @@
 <template>
   <div id="add-icon">
-    <img
-      src="../../../../assets/add.png"
-      width="68px"
-      height="84px"
-      id="icon"
-    />
+    <img src="../assets/add.png" width="68px" height="84px" id="icon" />
   </div>
 </template>
 <style scoped>
