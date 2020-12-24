@@ -25,7 +25,7 @@
 <style scoped>
 div {
   width: 100%;
-  height: 180px;
+  height: 8%;
   border-top: solid 2px #dcdcdc;
   position: absolute;
   bottom: 0;

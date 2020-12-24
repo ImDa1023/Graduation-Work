@@ -19,7 +19,8 @@ h2 {
   color: #101748;
   text-align: center;
   box-shadow: 1px -5px 20px 0px #cacacab9;
-  font-family: "源ノ角ゴシック";
+  font-family: "Meylio UI";
   font-weight: 550;
+  letter-spacing: 0.15em;
 }
 </style>
