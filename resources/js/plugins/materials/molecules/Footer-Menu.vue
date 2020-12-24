@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <div>
     <nav id="F_Menu">
       <ul class="nav-list">
         <li class="nav-list_child">
@@ -19,26 +19,11 @@
         </li>
       </ul>
     </nav>
-  </footer>
+  </div>
 </template>
-<script>
-// import Setting from "./icons/I_setting.vue";
-// import List from "./icons/I_list.vue";
-// import Notice from "./icons/I_notice.vue";
-
-// import SVGElement from "./Icon.vue";
-export default {
-  // name: "F_Menu",
-  // components: {
-  //   Setting,
-  //   List,
-  //   Notice,
-  // },
-};
-</script>
 
 <style scoped>
-footer {
+div {
   width: 100%;
   height: 180px;
   border-top: solid 2px #dcdcdc;
@@ -74,3 +59,18 @@ a {
   padding: 20px 35%;
 }
 </style>
+<script>
+// import Setting from "./icons/I_setting.vue";
+// import List from "./icons/I_list.vue";
+// import Notice from "./icons/I_notice.vue";
+
+// import SVGElement from "./Icon.vue";
+export default {
+  // name: "F_Menu",
+  // components: {
+  //   Setting,
+  //   List,
+  //   Notice,
+  // },
+};
+</script>
