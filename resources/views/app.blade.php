@@ -12,10 +12,5 @@
 <body>
     <div id="app"></div>
 </body>
-<style>
-    a{
-        font-size:3rem
-    }
-</style>
 </html>
 

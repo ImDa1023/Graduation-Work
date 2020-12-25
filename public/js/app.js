@@ -2027,49 +2027,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -6674,7 +6631,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "\nbody {\r\n  background-color: #f6f6f6;\n}\nh2 {\r\n  font-size: 2.5rem;\r\n  color: #101748;\r\n  text-align: center;\r\n  box-shadow: 1px -5px 20px 0px #cacacab9;\r\n  font-family: \"Meylio UI\";\r\n  font-weight: 550;\r\n  letter-spacing: 0.15em;\n}\r\n", ""]);
+exports.push([module.i, "\nbody {\r\n  background-color: #f6f6f6;\n}\nh1 {\r\n  font-size: 1rem;\n}\nh2 {\r\n  font-size: 1rem;\r\n  color: #101748;\r\n  text-align: center;\r\n  box-shadow: 1px -5px 20px 0px #cacacab9;\r\n  font-family: \"Meylio UI\";\r\n  font-weight: 550;\r\n  letter-spacing: 0.15em;\n}\na {\r\n  font-size: 1rem;\n}\r\n", ""]);
 
 // exports
 
@@ -6693,7 +6650,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\nrouter-link[data-v-85245028] {\r\n  font-size: 3rem;\n}\nbody[data-v-85245028] {\r\n  background-color: white;\n}\nh1[data-v-85245028] {\r\n  text-align: center;\r\n  font-size: 3rem;\n}\nol[data-v-85245028] {\r\n  -ms-scroll-snap-type: x mandatory;\r\n      scroll-snap-type: x mandatory;\r\n  white-space: nowrap;\r\n  overflow: auto;\r\n  width: 100%;\r\n  height: 430px;\n}\nli[data-v-85245028] {\r\n  scroll-snap-align: center;\r\n  display: inline-block;\r\n  width: 355px;\r\n  height: 100%;\r\n  white-space: normal;\r\n  background-color: gray;\r\n  margin-right: 6%;\r\n  border-radius: 15px;\n}\nli > a[data-v-85245028] {\r\n  color: white;\r\n  font-size: 3rem;\r\n  display: block;\n}\r\n", ""]);
+exports.push([module.i, "\nrouter-link[data-v-85245028] {\r\n  font-size: 1rem;\n}\nbody[data-v-85245028] {\r\n  background-color: white;\n}\nh1[data-v-85245028] {\r\n  text-align: center;\n}\nol[data-v-85245028] {\r\n  -ms-scroll-snap-type: x mandatory;\r\n      scroll-snap-type: x mandatory;\r\n  white-space: nowrap;\r\n  overflow: auto;\r\n  width: 100%;\r\n  height: 200px;\r\n  padding: 0;\n}\nli[data-v-85245028] {\r\n  scroll-snap-align: center;\r\n  display: inline-block;\r\n  width: 130px;\r\n  height: 150px;\r\n  white-space: normal;\r\n  background-color: gray;\r\n  margin-right: 6%;\r\n  border-radius: 15px;\n}\nli > a[data-v-85245028] {\r\n  color: white;\r\n  font-size: 1rem;\r\n  display: block;\n}\r\n", ""]);
 
 // exports
 
@@ -6712,7 +6669,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n#add-icon[data-v-dab42a7c] {\r\n  width: 130px;\r\n  height: 130px;\r\n  border-radius: 50%;\r\n  background-color: #ff6e4b;\r\n  position: relative;\n}\n#icon[data-v-dab42a7c] {\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 50%;\r\n  transform: translate(-50%, -50%);\n}\r\n", ""]);
+exports.push([module.i, "\n#add-icon[data-v-dab42a7c] {\r\n  width: 50px;\r\n  height: 50px;\r\n  border-radius: 50%;\r\n  background-color: #ff6e4b;\r\n  position: relative;\n}\n#icon[data-v-dab42a7c] {\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 50%;\r\n  transform: translate(-50%, -50%);\n}\r\n", ""]);
 
 // exports
 
@@ -6789,7 +6746,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n#rack-icon[data-v-1d5d1618] {\r\n  background: url(" + escape(__webpack_require__(/*! ../assets/rack.png */ "./resources/js/plugins/materials/assets/rack.png")) + ") no-repeat;\r\n  width: 100%;\r\n  height: 200px;\n}\n@media screen and (min-width: 481px) {\r\n  /* 481px以上に適用されるCSS（タブレット用） */\n#icon6[data-v-1d5d1618] {\r\n    max-width: 450px;\n}\n}\r\n", ""]);
+exports.push([module.i, "\n#rack[data-v-1d5d1618] {\r\n  width: 100%;\r\n  height: 380px;\n}\n#rack-icon[data-v-1d5d1618] {\r\n  background: url(" + escape(__webpack_require__(/*! ../assets/rack.png */ "./resources/js/plugins/materials/assets/rack.png")) + ") no-repeat;\r\n  background-position: center;\r\n  display: inline-block;\r\n  width: 50%;\r\n  height: 50%;\r\n  margin: 0;\n}\n@media screen and (min-width: 481px) {\r\n  /* 481px以上に適用されるCSS（タブレット用） */\n#icon6[data-v-1d5d1618] {\r\n    max-width: 450px;\n}\n}\r\n", ""]);
 
 // exports
 
@@ -39378,55 +39335,6 @@ var render = function() {
         )
       ]),
       _vm._v(" "),
-      _vm._m(1),
-      _vm._v(" "),
-      _c("div", { staticClass: "container" }, [
-        _c("table", { staticClass: "table table-hover" }, [
-          _vm._m(2),
-          _vm._v(" "),
-          _c(
-            "tbody",
-            _vm._l(_vm.scorelists, function(scorelist) {
-              return _c("tr", [
-                _c("th", { attrs: { scope: "row" } }, [
-                  _vm._v(_vm._s(scorelist.id))
-                ]),
-                _vm._v(" "),
-                _c("td", [_vm._v(_vm._s(scorelist.title))]),
-                _vm._v(" "),
-                _c("td", [_vm._v(_vm._s(scorelist.artist))]),
-                _vm._v(" "),
-                _c("td", [_vm._v(_vm._s(scorelist.composer))]),
-                _vm._v(" "),
-                _c("td", [_vm._v(_vm._s(scorelist.arranger))]),
-                _vm._v(" "),
-                _c("td", [_vm._v(_vm._s(scorelist.publisher))]),
-                _vm._v(" "),
-                _vm._m(3, true),
-                _vm._v(" "),
-                _vm._m(4, true),
-                _vm._v(" "),
-                _c("td", [
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn btn-danger",
-                      on: {
-                        click: function($event) {
-                          return _vm.deleteScorelist(scorelist.id)
-                        }
-                      }
-                    },
-                    [_vm._v("\n              Delete\n            ")]
-                  )
-                ])
-              ])
-            }),
-            0
-          )
-        ])
-      ]),
-      _vm._v(" "),
       _c("router-link", { attrs: { to: "add-form" } }, [_vm._v("form")]),
       _vm._v(" "),
       _c("div", [_c("Detail")], 1)
@@ -39441,54 +39349,6 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "header" }, [
       _c("h2", [_vm._v("楽譜リスト")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("section", [_c("h2", [_vm._v("全曲リスト")])])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("thead", { staticClass: "thead-light" }, [
-      _c("tr", [
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("#")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Title")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Artist")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Composer")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Arranger")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Publisher")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Show")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Edit")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Delete")])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("td", [
-      _c("button", { staticClass: "btn btn-primary" }, [_vm._v("Show")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("td", [
-      _c("button", { staticClass: "btn btn-success" }, [_vm._v("Edit")])
     ])
   }
 ]
@@ -39551,7 +39411,9 @@ var render = function() {
       _vm._v(" "),
       _c("router-link", { attrs: { to: "/first-setting" } }, [
         _vm._v("Tap Start")
-      ])
+      ]),
+      _vm._v(" "),
+      _c("Search-icon")
     ],
     1
   )
@@ -39589,8 +39451,8 @@ var staticRenderFns = [
       _c("img", {
         attrs: {
           src: __webpack_require__(/*! ../assets/add.png */ "./resources/js/plugins/materials/assets/add.png"),
-          width: "68px",
-          height: "84px",
+          width: "34px",
+          height: "42px",
           id: "icon"
         }
       })
@@ -39787,8 +39649,8 @@ var staticRenderFns = [
       _c("img", {
         attrs: {
           src: __webpack_require__(/*! ../assets/movie.png */ "./resources/js/plugins/materials/assets/movie.png"),
-          width: "88px",
-          height: "72px",
+          width: "25px",
+          height: "25px",
           id: "icon"
         }
       })
@@ -39827,8 +39689,8 @@ var staticRenderFns = [
       _c("img", {
         attrs: {
           src: __webpack_require__(/*! ../assets/moviesort.png */ "./resources/js/plugins/materials/assets/moviesort.png"),
-          width: "65px",
-          height: "65px",
+          width: "30px",
+          height: "30px",
           id: "icon5"
         }
       })
@@ -39909,9 +39771,18 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { attrs: { id: "rack-icon" } })
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "rack" } }, [
+      _c("div", { attrs: { id: "rack-icon" } })
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -39968,8 +39839,8 @@ var staticRenderFns = [
       _c("img", {
         attrs: {
           src: __webpack_require__(/*! ../assets/search.png */ "./resources/js/plugins/materials/assets/search.png"),
-          width: "85px",
-          height: "84px",
+          width: "40px",
+          height: "40px",
           id: "icon2"
         }
       })
@@ -40071,8 +39942,8 @@ var staticRenderFns = [
       _c("img", {
         attrs: {
           src: __webpack_require__(/*! ../assets/sort.png */ "./resources/js/plugins/materials/assets/sort.png"),
-          width: "75px",
-          height: "76px",
+          width: "30px",
+          height: "30px",
           id: "icon3"
         }
       })
@@ -56154,7 +56025,7 @@ context.keys().forEach(function (contextKey) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/images/add.png?35f81db1313d6c0d143584ca6d2ffb9b";
+module.exports = "/images/add.png?fcddc95570b0f2e69e9caffc1de23f26";
 
 /***/ }),
 
@@ -56165,7 +56036,7 @@ module.exports = "/images/add.png?35f81db1313d6c0d143584ca6d2ffb9b";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/images/movie.png?4ca04e0fd5b1c2d87777ca72a615418b";
+module.exports = "/images/movie.png?a8bec1396548fdbfb56cd8afb62087ad";
 
 /***/ }),
 
@@ -56176,7 +56047,7 @@ module.exports = "/images/movie.png?4ca04e0fd5b1c2d87777ca72a615418b";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/images/moviesort.png?268c71d5a43b0b52e443b134b61ac93e";
+module.exports = "/images/moviesort.png?e29f3f78099d2fbb41dc97354337aec5";
 
 /***/ }),
 
@@ -56187,7 +56058,7 @@ module.exports = "/images/moviesort.png?268c71d5a43b0b52e443b134b61ac93e";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/images/rack.png?5b3b32c29268b72f4681efb152bb1a81";
+module.exports = "/images/rack.png?48faa9cd13b4b535bf45d7bbc0fa31a7";
 
 /***/ }),
 
@@ -56198,7 +56069,7 @@ module.exports = "/images/rack.png?5b3b32c29268b72f4681efb152bb1a81";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/images/search.png?d64ffdc2bd95fc502af39153cca8485a";
+module.exports = "/images/search.png?f43ff46334cefbecdfe6a5f854dd87cf";
 
 /***/ }),
 
@@ -56209,7 +56080,7 @@ module.exports = "/images/search.png?d64ffdc2bd95fc502af39153cca8485a";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/images/sort.png?1f3cae711e2358ddb04b7b3f6c437a3b";
+module.exports = "/images/sort.png?bdeb290be81a472122aad687a6988046";
 
 /***/ }),
 
@@ -57402,8 +57273,8 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Graduation-Work\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Graduation-Work\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\mynam\Graduation-Work\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\mynam\Graduation-Work\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

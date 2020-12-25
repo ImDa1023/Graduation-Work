@@ -1,12 +1,12 @@
 <template>
   <div id="add-icon">
-    <img src="../assets/add.png" width="68px" height="84px" id="icon" />
+    <img src="../assets/add.png" width="34px" height="42px" id="icon" />
   </div>
 </template>
 <style scoped>
 #add-icon {
-  width: 130px;
-  height: 130px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background-color: #ff6e4b;
   position: relative;
