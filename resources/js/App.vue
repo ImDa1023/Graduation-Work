@@ -1,10 +1,14 @@
 <template>
   <div id="app">
+    <header v-if="$route.name !== 'タイトル'">
+      <Header></Header>
+    </header>
+
     <main>
       <RouterView />
     </main>
 
-    <footer v-if="$route.name !== 'title' && $route.name !== 'first-setting'">
+    <footer v-if="$route.name !== 'タイトル' && $route.name !== '初期設定'">
       <Footer-Menu></Footer-Menu>
     </footer>
   </div>
@@ -20,7 +24,6 @@ h2 {
   font-size: 1rem;
   color: #101748;
   text-align: center;
-  box-shadow: 1px -5px 20px 0px #cacacab9;
   font-family: "Meylio UI";
   font-weight: 550;
   letter-spacing: 0.15em;

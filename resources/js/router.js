@@ -13,32 +13,32 @@ Vue.use(VueRouter)
 const routes = [
     {
       path: '/',
-      name: 'title',
+      name: 'タイトル',
       component:Title
     },
     {
       path: '/first-setting',
-      name: 'first-setting',
+      name: '初期設定',
       component: First_Setting
     },
     {
       path: '/score',
-      name: 'score.list',
+      name: '楽譜リスト',
       component: Score
     },
     {
       path: '/setting',
-      name: 'setting',
+      name: '管理',
       component: Setting
     },
     {
       path: '/notice',
-      name: 'notice',
+      name: 'お知らせ',
       component:Notice
     },
     {
       path: '/add-form',
-      name: 'add-form',
+      name: '楽曲追加',
       component: Add_Form
     },
     {
