@@ -18,7 +18,7 @@ const routes = [
     },
     {
       path: '/first-setting',
-      name: '初期設定',
+      name: '棚の設定',
       component: First_Setting
     },
     {

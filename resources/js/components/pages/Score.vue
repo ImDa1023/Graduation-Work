@@ -10,9 +10,6 @@
     </ol>
     <Score-list />
     <router-link to="add-form">form</router-link>
-    <div>
-      <Score-Details />
-    </div>
   </div>
 </template>
 <style scoped>
