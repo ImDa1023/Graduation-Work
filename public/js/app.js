@@ -2223,10 +2223,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/plugins/materials/molecules/Search-form.vue?vue&type=script&defer=true&lang=js&":
-/*!**************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/plugins/materials/molecules/Search-form.vue?vue&type=script&defer=true&lang=js& ***!
-  \**************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/plugins/materials/molecules/Search-form.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/plugins/materials/molecules/Search-form.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2242,12 +2242,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      isOpened: false
+      isOpened: true
     };
   },
   methods: {
@@ -6967,7 +6965,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n.Accordion-Item[data-v-35bba8a7] {\r\n  border-bottom: 1px solid #eee;\r\n  letter-spacing: 0.1em;\r\n  line-height: 1.5;\n}\n#search-icon[data-v-35bba8a7] {\r\n  width: 40px;\r\n  height: 40px;\r\n  position: absolute;\r\n  top: 0;\r\n  right: 0;\r\n  border: 0;\r\n  /* outline: none; */\r\n  background-color: #f6f6f6;\n}\r\n", ""]);
+exports.push([module.i, "\n.Accordion-Item[data-v-35bba8a7] {\r\n  border-bottom: 1px solid #eee;\r\n  letter-spacing: 0.1em;\r\n  line-height: 1.5;\n}\n#search-icon[data-v-35bba8a7] {\r\n  width: 40px;\r\n  height: 40px;\r\n  position: absolute;\r\n  top: 0;\r\n  right: 0;\r\n  border: 0;\r\n  /* outline: none; */\r\n  background-color: #f6f6f6;\n}\n.tamesi[data-v-35bba8a7] {\r\n  display: none;\n}\r\n", ""]);
 
 // exports
 
@@ -39873,24 +39871,19 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("ul", { staticClass: "music" }, [
+    _c("li", [_vm._v(_vm._s(_vm.scorelist.title))]),
+    _vm._v(" "),
+    _c("li", [_vm._v(_vm._s(_vm.scorelist.artist))]),
+    _vm._v(" "),
+    _c("li", [_vm._v(_vm._s(_vm.scorelist.composer))]),
+    _vm._v(" "),
+    _c("li", [_vm._v(_vm._s(_vm.scorelist.arranger))]),
+    _vm._v(" "),
+    _c("li", [_vm._v(_vm._s(_vm.scorelist.publisher))])
+  ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", [
-      _c("li", [_vm._v("曲名")]),
-      _vm._v(" "),
-      _c("li", [_vm._v("編曲者")]),
-      _vm._v(" "),
-      _c("li", [_vm._v("歌手")]),
-      _vm._v(" "),
-      _c("li", [_vm._v("出版社")])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -40442,9 +40435,10 @@ var render = function() {
         1
       ),
       _vm._v(" "),
-      _vm.isOpened
-        ? _c("Search-form-inner", { staticClass: "Accordion-Item" })
-        : _vm._e()
+      _c("Search-form-inner", {
+        staticClass: "Accordion-Item",
+        class: { tamesi: _vm.isOpened }
+      })
     ],
     1
   )
@@ -40480,9 +40474,16 @@ var render = function() {
       _vm._v(" "),
       _c("Moviesort-icon"),
       _vm._v(" "),
-      _c("div", { staticClass: "score-list" }, [_c("List-item")], 1)
+      _vm._l(_vm.scorelists, function(scorelist) {
+        return _c(
+          "div",
+          { key: scorelist, staticClass: "score-list" },
+          [_c("List-item")],
+          1
+        )
+      })
     ],
-    1
+    2
   )
 }
 var staticRenderFns = []
@@ -57756,14 +57757,15 @@ __webpack_require__.r(__webpack_exports__);
 /*!******************************************************************!*\
   !*** ./resources/js/plugins/materials/molecules/Search-form.vue ***!
   \******************************************************************/
-/*! exports provided: default */
+/*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Search_form_vue_vue_type_template_id_35bba8a7_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Search-form.vue?vue&type=template&id=35bba8a7&scoped=true& */ "./resources/js/plugins/materials/molecules/Search-form.vue?vue&type=template&id=35bba8a7&scoped=true&");
-/* harmony import */ var _Search_form_vue_vue_type_script_defer_true_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Search-form.vue?vue&type=script&defer=true&lang=js& */ "./resources/js/plugins/materials/molecules/Search-form.vue?vue&type=script&defer=true&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _Search_form_vue_vue_type_style_index_0_id_35bba8a7_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Search-form.vue?vue&type=style&index=0&id=35bba8a7&scoped=true&lang=css& */ "./resources/js/plugins/materials/molecules/Search-form.vue?vue&type=style&index=0&id=35bba8a7&scoped=true&lang=css&");
+/* harmony import */ var _Search_form_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Search-form.vue?vue&type=script&lang=js& */ "./resources/js/plugins/materials/molecules/Search-form.vue?vue&type=script&lang=js&");
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Search_form_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Search_form_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _Search_form_vue_vue_type_style_index_0_id_35bba8a7_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Search-form.vue?vue&type=style&index=0&id=35bba8a7&scoped=true&lang=css& */ "./resources/js/plugins/materials/molecules/Search-form.vue?vue&type=style&index=0&id=35bba8a7&scoped=true&lang=css&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -57774,7 +57776,7 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
-  _Search_form_vue_vue_type_script_defer_true_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Search_form_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _Search_form_vue_vue_type_template_id_35bba8a7_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
   _Search_form_vue_vue_type_template_id_35bba8a7_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
@@ -57791,17 +57793,17 @@ component.options.__file = "resources/js/plugins/materials/molecules/Search-form
 
 /***/ }),
 
-/***/ "./resources/js/plugins/materials/molecules/Search-form.vue?vue&type=script&defer=true&lang=js&":
-/*!******************************************************************************************************!*\
-  !*** ./resources/js/plugins/materials/molecules/Search-form.vue?vue&type=script&defer=true&lang=js& ***!
-  \******************************************************************************************************/
-/*! exports provided: default */
+/***/ "./resources/js/plugins/materials/molecules/Search-form.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************!*\
+  !*** ./resources/js/plugins/materials/molecules/Search-form.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************/
+/*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Search_form_vue_vue_type_script_defer_true_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Search-form.vue?vue&type=script&defer=true&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/plugins/materials/molecules/Search-form.vue?vue&type=script&defer=true&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Search_form_vue_vue_type_script_defer_true_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Search_form_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Search-form.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/plugins/materials/molecules/Search-form.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Search_form_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
