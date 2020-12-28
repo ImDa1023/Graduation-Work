@@ -25,7 +25,7 @@
 <style scoped>
 div {
   width: 100%;
-  height: 8%;
+  /* height: 8%; */
   border-top: solid 2px #dcdcdc;
   position: absolute;
   z-index: 0;
@@ -57,7 +57,8 @@ a {
   display: block;
   width: 100%;
   height: 100%;
-  padding: 20px 35%;
+  padding: 10px 35%;
+  font-size: 10px;
 }
 </style>
 <script>
