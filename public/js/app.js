@@ -39644,9 +39644,7 @@ var render = function() {
     [
       _c("router-link", { attrs: { to: "/first-setting" } }, [
         _vm._v("Tap Start")
-      ]),
-      _vm._v(" "),
-      _c("Search-icon")
+      ])
     ],
     1
   )
@@ -40358,7 +40356,7 @@ var render = function() {
       _vm._v(" "),
       _c("h2", [_vm._v(_vm._s(_vm.$route.name))]),
       _vm._v(" "),
-      _c("Search-form")
+      _vm.$route.name == "楽譜リスト" ? _c("Search-form") : _vm._e()
     ],
     1
   )
