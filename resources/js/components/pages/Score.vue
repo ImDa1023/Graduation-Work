@@ -8,6 +8,7 @@
       <li><router-link to="details">ジャンル</router-link></li>
       <li><router-link to="details">ジャンル</router-link></li>
     </ol>
+    <Score-list />
     <router-link to="add-form">form</router-link>
     <div>
       <Score-Details />
