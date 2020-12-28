@@ -28,6 +28,7 @@ div {
   height: 8%;
   border-top: solid 2px #dcdcdc;
   position: absolute;
+  z-index: 0;
   bottom: 0;
 }
 
