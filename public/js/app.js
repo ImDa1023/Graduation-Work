@@ -2024,6 +2024,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2072,25 +2073,34 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: {
-    radius: {
-      type: Number,
-      "default": 50
-    }
-  },
+  // props: {
+  //   radius: {
+  //     type: Number,
+  //     default: 30,
+  //   },
+  // }
   watch: {
     radius: function radius() {
       this.draw(this.radius);
     }
   },
   methods: {
+    //https://note.com/yusaku/n/n748e9322b2fe
+    //https://oku.edu.mie-u.ac.jp/~okumura/javascript/circles.html
     draw: function draw(radius) {
-      this.ctx.beginPath();
-      this.ctx.clearRect(0, 0, 200, 200);
-      this.ctx.arc(50, 10, radius, 0, Math.PI * 2);
-      this.ctx.arc(10, 100, radius, 0, Math.PI * 2);
-      this.ctx.fillStyle = "#393F66";
-      this.ctx.fill();
+      for (var i = 0; i < 2; i++) {
+        var x = 50 * Math.random();
+        var y = 20 * Math.random();
+        var x2 = 150 * Math.random();
+        var y2 = 130 * Math.random();
+        var r = 10 * Math.random() + 30;
+        this.ctx.beginPath(); // this.ctx.clearRect(0, 0, 200, 200);
+
+        this.ctx.arc(x, y, r, 0, Math.PI * 2, false);
+        this.ctx.arc(x2, y2, r, 0, Math.PI * 2, false);
+        this.ctx.fillStyle = "#393F66";
+        this.ctx.fill();
+      }
     }
   },
   mounted: function mounted() {
@@ -6927,7 +6937,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\ndiv[data-v-0b18414f] {\r\n  width: 100%;\r\n  height: 8%;\r\n  border-top: solid 2px #dcdcdc;\r\n  position: absolute;\r\n  bottom: 0;\n}\n.nav-list[data-v-0b18414f] {\r\n  list-style-type: none;\r\n  padding: 0;\r\n  margin: 0;\r\n  width: 100%;\r\n  height: 100%;\n}\n.nav-list_child[data-v-0b18414f] {\r\n  display: inline-block;\r\n  /* margin-right: 15%; */\r\n  width: 30%;\r\n  height: 100%;\n}\n.nav-list_child[data-v-0b18414f]:nth-of-type(2) {\r\n  width: 39%;\r\n  border-right: solid 1.5px #dcdcdc;\r\n  border-left: solid 1.5px #dcdcdc;\n}\na[data-v-0b18414f] {\r\n  display: block;\r\n  width: 100%;\r\n  height: 100%;\r\n  padding: 20px 35%;\n}\r\n", ""]);
+exports.push([module.i, "\ndiv[data-v-0b18414f] {\r\n  width: 100%;\r\n  height: 8%;\r\n  border-top: solid 2px #dcdcdc;\r\n  position: absolute;\r\n  bottom: 0;\n}\n.nav-list[data-v-0b18414f] {\r\n  list-style-type: none;\r\n  padding: 0;\r\n  margin: 0;\r\n  width: 100%;\r\n  height: 100%;\n}\n.nav-list_child[data-v-0b18414f] {\r\n  display: inline-block;\r\n  /* margin-right: 15%; */\r\n  width: 30%;\r\n  height: 100%;\n}\n.nav-list_child[data-v-0b18414f]:nth-of-type(2) {\r\n  width: 38%;\r\n  border-right: solid 1.5px #dcdcdc;\r\n  border-left: solid 1.5px #dcdcdc;\n}\na[data-v-0b18414f] {\r\n  display: block;\r\n  width: 100%;\r\n  height: 100%;\r\n  padding: 20px 35%;\n}\r\n", ""]);
 
 // exports
 
@@ -39507,7 +39517,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_c("box"), _vm._v(" "), _c("Clowd-box")], 1)
+  return _c("div", [_c("box")], 1)
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -39534,6 +39544,8 @@ var render = function() {
   return _c(
     "div",
     [
+      _c("Clowd-box"),
+      _vm._v(" "),
       _c("ol", [
         _c(
           "li",
@@ -39769,7 +39781,7 @@ var render = function() {
         id: "レイヤー_1",
         "data-name": "レイヤー 1",
         xmlns: "http://www.w3.org/2000/svg",
-        viewBox: "0 0 41.49 41.49"
+        viewBox: "0 0 50 41.49"
       }
     },
     [
@@ -57755,15 +57767,14 @@ __webpack_require__.r(__webpack_exports__);
 /*!******************************************************************!*\
   !*** ./resources/js/plugins/materials/molecules/Search-form.vue ***!
   \******************************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Search_form_vue_vue_type_template_id_35bba8a7_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Search-form.vue?vue&type=template&id=35bba8a7&scoped=true& */ "./resources/js/plugins/materials/molecules/Search-form.vue?vue&type=template&id=35bba8a7&scoped=true&");
 /* harmony import */ var _Search_form_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Search-form.vue?vue&type=script&lang=js& */ "./resources/js/plugins/materials/molecules/Search-form.vue?vue&type=script&lang=js&");
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Search_form_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Search_form_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var _Search_form_vue_vue_type_style_index_0_id_35bba8a7_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Search-form.vue?vue&type=style&index=0&id=35bba8a7&scoped=true&lang=css& */ "./resources/js/plugins/materials/molecules/Search-form.vue?vue&type=style&index=0&id=35bba8a7&scoped=true&lang=css&");
+/* empty/unused harmony star reexport *//* harmony import */ var _Search_form_vue_vue_type_style_index_0_id_35bba8a7_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Search-form.vue?vue&type=style&index=0&id=35bba8a7&scoped=true&lang=css& */ "./resources/js/plugins/materials/molecules/Search-form.vue?vue&type=style&index=0&id=35bba8a7&scoped=true&lang=css&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -57795,7 +57806,7 @@ component.options.__file = "resources/js/plugins/materials/molecules/Search-form
 /*!*******************************************************************************************!*\
   !*** ./resources/js/plugins/materials/molecules/Search-form.vue?vue&type=script&lang=js& ***!
   \*******************************************************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -57975,8 +57986,8 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\mynam\Graduation-Work\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\mynam\Graduation-Work\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Graduation-Work\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Graduation-Work\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

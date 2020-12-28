@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Clowd-box />
     <ol>
       <li><router-link to="details">ジャンル</router-link></li>
       <li><router-link to="details">ジャンル</router-link></li>
