@@ -6,6 +6,7 @@
     <!-- <Search-form-inner class="Accordion-Item" v-if="isOpened" /> -->
 
     <Search-form-inner class="Accordion-Item" :class="{ tamesi: isOpened }" />
+    <p>コミット用</p>
   </div>
 </template>
 <script>
