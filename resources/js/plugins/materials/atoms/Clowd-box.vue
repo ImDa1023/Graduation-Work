@@ -5,12 +5,12 @@
 
 <script>
 export default {
-  props: {
-    radius: {
-      type: Number,
-      default: 50,
-    },
-  },
+  // props: {
+  //   radius: {
+  //     type: Number,
+  //     default: 30,
+  //   },
+  // }
   watch: {
     radius() {
       this.draw(this.radius);
@@ -18,13 +18,23 @@ export default {
   },
 
   methods: {
+    //https://note.com/yusaku/n/n748e9322b2fe
+    //https://oku.edu.mie-u.ac.jp/~okumura/javascript/circles.html
+
     draw(radius) {
-      this.ctx.beginPath();
-      this.ctx.clearRect(0, 0, 200, 200);
-      this.ctx.arc(50, 10, radius, 0, Math.PI * 2);
-      this.ctx.arc(10, 100, radius, 0, Math.PI * 2);
-      this.ctx.fillStyle = "#393F66";
-      this.ctx.fill();
+      for (let i = 0; i < 2; i++) {
+        let x = 50 * Math.random();
+        let y = 20 * Math.random();
+        let x2 = 150 * Math.random();
+        let y2 = 130 * Math.random();
+        let r = 10 * Math.random() + 30;
+        this.ctx.beginPath();
+        // this.ctx.clearRect(0, 0, 200, 200);
+        this.ctx.arc(x, y, r, 0, Math.PI * 2, false);
+        this.ctx.arc(x2, y2, r, 0, Math.PI * 2, false);
+        this.ctx.fillStyle = "#393F66";
+        this.ctx.fill();
+      }
     },
   },
   mounted() {

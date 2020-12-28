@@ -47,7 +47,7 @@ div {
 }
 
 .nav-list_child:nth-of-type(2) {
-  width: 39%;
+  width: 38%;
   border-right: solid 1.5px #dcdcdc;
   border-left: solid 1.5px #dcdcdc;
 }
