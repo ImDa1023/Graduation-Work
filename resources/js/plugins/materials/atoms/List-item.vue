@@ -1,8 +1,9 @@
 <template>
-  <ul>
-    <li>曲名</li>
-    <li>編曲者</li>
-    <li>歌手</li>
-    <li>出版社</li>
+  <ul class="music">
+    <li>{{ scorelist.title }}</li>
+    <li>{{ scorelist.artist }}</li>
+    <li>{{ scorelist.composer }}</li>
+    <li>{{ scorelist.arranger }}</li>
+    <li>{{ scorelist.publisher }}</li>
   </ul>
 </template>

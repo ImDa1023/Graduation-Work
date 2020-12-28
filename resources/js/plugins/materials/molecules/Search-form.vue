@@ -3,18 +3,16 @@
     <button id="search-icon" class="Accordion-Item" @click="toggleAccordion()">
       <Search-icon />
     </button>
-    <!-- <Search-icon></Search-icon> -->
-    <Search-form-inner
-      class="Accordion-Item"
-      v-if="isOpened"
-    ></Search-form-inner>
+    <!-- <Search-form-inner class="Accordion-Item" v-if="isOpened" /> -->
+
+    <Search-form-inner class="Accordion-Item" :class="{ tamesi: isOpened }" />
   </div>
 </template>
-<script defer>
+<script>
 export default {
   data() {
     return {
-      isOpened: false,
+      isOpened: true,
     };
   },
   methods: {
@@ -40,5 +38,8 @@ export default {
   border: 0;
   /* outline: none; */
   background-color: #f6f6f6;
+}
+.tamesi {
+  display: none;
 }
 </style>
