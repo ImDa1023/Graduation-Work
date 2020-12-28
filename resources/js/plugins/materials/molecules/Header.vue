@@ -2,7 +2,7 @@
   <div>
     <Return-button />
     <h2>{{ $route.name }}</h2>
-    <Search-form />
+    <Search-form v-if="$route.name == '楽譜リスト'" />
     <!-- 登録ボタンどうしよう -->
   </div>
 </template>
