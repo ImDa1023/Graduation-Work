@@ -10,6 +10,6 @@
   border-radius: 8px;
   position: relative;
   z-index: 100;
-  background-color: gray;
+  background-color: #f6f6f6;
 }
 </style>

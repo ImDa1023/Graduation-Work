@@ -5,19 +5,19 @@
     </button>
     <!-- <Search-form-inner class="Accordion-Item" v-if="isOpened" /> -->
 
-    <Score-Details class="Accordion-Item" :class="{ tamesi: isOpened }" />
+    <Score-Details class="Accordion-Item" :class="{ tamesi: isClosed }" />
   </div>
 </template>
 <script>
 export default {
   data() {
     return {
-      isOpened: true,
+      isClosed: true,
     };
   },
   methods: {
     toggleAccordion() {
-      this.isOpened = !this.isOpened;
+      this.isClosed = !this.isClosed;
       // console.log("1");
     },
   },
