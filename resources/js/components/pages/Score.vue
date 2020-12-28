@@ -10,7 +10,7 @@
     </ol>
     <router-link to="add-form">form</router-link>
     <div>
-      <Detail />
+      <Score-Details />
     </div>
   </div>
 </template>
@@ -53,8 +53,6 @@ li > a {
 }
 </style>
 <script>
-import Detail from "../../plugins/materials/molecules/Score-Details.vue";
-
 export default {
   data: function () {
     return {
@@ -75,9 +73,6 @@ export default {
   },
   mounted() {
     this.getScorelists();
-  },
-  components: {
-    Detail,
   },
 };
 </script>

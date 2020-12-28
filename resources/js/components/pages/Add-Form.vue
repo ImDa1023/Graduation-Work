@@ -41,7 +41,7 @@
       submit() {
         axios.post('/api/scores', this.scorelist)
         .then((res) => {
-          this.$router.push({name: 'score.list'});
+          this.$router.push({path: '/score'});
         });
       }
     }
