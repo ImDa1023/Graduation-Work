@@ -1,8 +1,5 @@
 <template>
   <div>
-    <div class="header">
-      <h2>楽譜リスト</h2>
-    </div>
     <ol>
       <li><router-link to="details">ジャンル</router-link></li>
       <li><router-link to="details">ジャンル</router-link></li>

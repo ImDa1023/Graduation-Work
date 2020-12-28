@@ -1,8 +1,32 @@
 <template>
   <div>
-    <Return />
-    <h1>へっだー(仮)</h1>
-    <Search />
+    <Return-button />
+    <h2>{{ $route.name }}</h2>
+    <Search-form />
     <!-- 登録ボタンどうしよう -->
   </div>
 </template>
+<script>
+export default {
+  // data() {
+  //   var tamesi = $route.name;
+  //   return {
+  //     titleName: tamesi,
+  //   };
+  // },
+  // props: {
+  //   titleName: {
+  //     type: String,
+  //     setting: {
+  //       title: "管理",
+  //     },
+  //   },
+  // },
+};
+</script>
+<style scoped>
+div {
+  width: 100%;
+  height: 50px;
+}
+</style>
