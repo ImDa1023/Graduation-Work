@@ -40,8 +40,8 @@ export default {
   border: 1px solid;
 }
 .transform {
-  transform: translateY(-30px);
-  opacity: 0;
+  transform: translateY(-50px);
+  /* opacity: 0; */
 }
 .icon-button {
   width: 40px;
