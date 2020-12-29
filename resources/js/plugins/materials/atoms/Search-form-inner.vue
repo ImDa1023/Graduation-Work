@@ -7,5 +7,6 @@
 .form-inner {
   width: 100%;
   height: 50px;
+  background-color: gray;
 }
 </style>
