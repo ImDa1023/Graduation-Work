@@ -2310,6 +2310,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({// data() {
   //   var tamesi = $route.name;
   //   return {
@@ -2348,15 +2350,19 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      isOpened: true
+      isOpened: true,
+      isAnime: false
     };
   },
   methods: {
     toggleAccordion: function toggleAccordion() {
-      this.isOpened = !this.isOpened; // console.log("1");
+      this.isOpened = !this.isOpened;
+      this.isAnime = !this.isAnime; // console.log("1");
     }
   }
 });
@@ -6975,7 +6981,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n.form-inner[data-v-8e47eff6] {\r\n  width: 100%;\r\n  height: 50px;\n}\r\n", ""]);
+exports.push([module.i, "\n.form-inner[data-v-8e47eff6] {\r\n  width: 100%;\r\n  height: 50px;\r\n  background-color: gray;\n}\r\n", ""]);
 
 // exports
 
@@ -7070,7 +7076,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\ndiv[data-v-79a09bc2] {\r\n  width: 100%;\r\n  height: 50px;\n}\r\n", ""]);
+exports.push([module.i, "\ndiv[data-v-79a09bc2] {\r\n  width: 100%;\r\n  height: 50px;\n}\n.z-index[data-v-79a09bc2] {\r\n  position: relative;\r\n  z-index: 1;\n}\r\n", ""]);
 
 // exports
 
@@ -7108,7 +7114,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n.Accordion-Item[data-v-35bba8a7] {\r\n  border-bottom: 1px solid #eee;\r\n  letter-spacing: 0.1em;\r\n  line-height: 1.5;\n}\n.icon-button[data-v-35bba8a7] {\r\n  width: 40px;\r\n  height: 40px;\r\n  position: absolute;\r\n  top: 0;\r\n  right: 0;\r\n  border: 0;\r\n  /* outline: none; */\r\n  background-color: #f6f6f6;\n}\n.tamesi[data-v-35bba8a7] {\r\n  display: none;\n}\r\n", ""]);
+exports.push([module.i, "\n.Accordion-Item[data-v-35bba8a7] {\r\n  width: 100%;\r\n  height: 50px;\r\n  background: #f6f6f6;\r\n  transition: all 300ms 0s ease;\r\n  position: relative;\r\n  /* top: -200px; */\r\n  /* z-index: -10; */\r\n  border: 1px solid;\n}\n.transform[data-v-35bba8a7] {\r\n  transform: translateY(-30px);\r\n  opacity: 0;\n}\n.icon-button[data-v-35bba8a7] {\r\n  width: 40px;\r\n  height: 40px;\r\n  position: absolute;\r\n  top: 0;\r\n  right: 0;\r\n  border: 0;\r\n  /* outline: none; */\r\n  background-color: #f6f6f6;\r\n  z-index: 2;\n}\n@-webkit-keyframes accordion-data-v-35bba8a7 {\nfrom {\r\n    transform: translateY(-50px);\r\n    z-index: -20;\n}\nto {\r\n    transform: translateY(5px);\r\n    z-index: 1;\n}\n}\n@keyframes accordion-data-v-35bba8a7 {\nfrom {\r\n    transform: translateY(-50px);\r\n    z-index: -20;\n}\nto {\r\n    transform: translateY(5px);\r\n    z-index: 1;\n}\n}\r\n", ""]);
 
 // exports
 
@@ -40623,14 +40629,23 @@ var render = function() {
   return _c(
     "div",
     [
-      _c("Return-button"),
+      _c(
+        "div",
+        { staticClass: "z-index" },
+        [
+          _c("Return-button"),
+          _vm._v(" "),
+          _c("h2", [_vm._v(_vm._s(_vm.$route.name))]),
+          _vm._v(" "),
+          _vm.$route.name == "棚の設定" || _vm.$route.name == "楽曲追加"
+            ? _c("Entry-button")
+            : _vm._e()
+        ],
+        1
+      ),
       _vm._v(" "),
-      _c("h2", [_vm._v(_vm._s(_vm.$route.name))]),
-      _vm._v(" "),
-      _vm.$route.name == "棚の設定" || _vm.$route.name == "楽曲追加"
-        ? _c("Entry-button")
-        : _vm.$route.name == "楽譜リスト"
-        ? _c("Search-form")
+      _vm.$route.name == "楽譜リスト"
+        ? _c("Search-form", { staticClass: "up" })
         : _vm._e()
     ],
     1
@@ -40734,7 +40749,7 @@ var render = function() {
       _c(
         "button",
         {
-          staticClass: "icon-button Accordion-Item",
+          staticClass: "icon-button",
           on: {
             click: function($event) {
               return _vm.toggleAccordion()
@@ -40747,10 +40762,8 @@ var render = function() {
       _vm._v(" "),
       _c("Search-form-inner", {
         staticClass: "Accordion-Item",
-        class: { tamesi: _vm.isOpened }
-      }),
-      _vm._v(" "),
-      _c("p", [_vm._v("コミット用")])
+        class: { transform: _vm.isOpened }
+      })
     ],
     1
   )
@@ -58201,14 +58214,15 @@ __webpack_require__.r(__webpack_exports__);
 /*!******************************************************************!*\
   !*** ./resources/js/plugins/materials/molecules/Search-form.vue ***!
   \******************************************************************/
-/*! exports provided: default */
+/*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Search_form_vue_vue_type_template_id_35bba8a7_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Search-form.vue?vue&type=template&id=35bba8a7&scoped=true& */ "./resources/js/plugins/materials/molecules/Search-form.vue?vue&type=template&id=35bba8a7&scoped=true&");
 /* harmony import */ var _Search_form_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Search-form.vue?vue&type=script&lang=js& */ "./resources/js/plugins/materials/molecules/Search-form.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _Search_form_vue_vue_type_style_index_0_id_35bba8a7_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Search-form.vue?vue&type=style&index=0&id=35bba8a7&scoped=true&lang=css& */ "./resources/js/plugins/materials/molecules/Search-form.vue?vue&type=style&index=0&id=35bba8a7&scoped=true&lang=css&");
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Search_form_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Search_form_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _Search_form_vue_vue_type_style_index_0_id_35bba8a7_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Search-form.vue?vue&type=style&index=0&id=35bba8a7&scoped=true&lang=css& */ "./resources/js/plugins/materials/molecules/Search-form.vue?vue&type=style&index=0&id=35bba8a7&scoped=true&lang=css&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -58240,7 +58254,7 @@ component.options.__file = "resources/js/plugins/materials/molecules/Search-form
 /*!*******************************************************************************************!*\
   !*** ./resources/js/plugins/materials/molecules/Search-form.vue?vue&type=script&lang=js& ***!
   \*******************************************************************************************/
-/*! exports provided: default */
+/*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -58367,8 +58381,8 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\daiki\LaravelWork\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\daiki\LaravelWork\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\mynam\Graduation-Work\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\mynam\Graduation-Work\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
