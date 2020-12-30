@@ -2309,6 +2309,57 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
  // import Setting from "./icons/I_setting.vue";
 // import List from "./icons/I_list.vue";
 // import Notice from "./icons/I_notice.vue";
@@ -6957,7 +7008,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n#add-icon[data-v-dab42a7c] {\r\n  width: 5em;\r\n  height: 5em;\r\n  border-radius: 50%;\r\n  background-color: #ff6e4b;\r\n  position: fixed;\r\n  right: 5%;\r\n  bottom: 10%;\n}\n#icon[data-v-dab42a7c] {\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 50%;\r\n  transform: translate(-50%, -50%);\n}\r\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\r\n/* #add-icon {\r\n  position: inline-block;\r\n} */\n#icon[data-v-dab42a7c] {\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 50%;\r\n  transform: translate(-50%, -50%);\n}\r\n", ""]);
 
 // exports
 
@@ -7148,7 +7199,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n.cls-1,\r\n.cls-2,\r\n.cls-3 {\r\n  fill: none;\r\n  stroke: #1e2b5c;\r\n  stroke-linecap: round;\n}\n.cls-1,\r\n.cls-2 {\r\n  stroke-linejoin: round;\n}\n.cls-1 {\r\n  stroke-width: 1.61px;\n}\n.cls-2,\r\n.cls-3 {\r\n  stroke-width: 1.46px;\n}\n.cls-3 {\r\n  stroke-miterlimit: 10;\n}\r\n", ""]);
+exports.push([module.i, "\nsvg {\r\n  max-width: 40px;\n}\n.cls-1,\r\n.cls-2,\r\n.cls-3 {\r\n  fill: none;\r\n  stroke: #1e2b5c;\r\n  stroke-linecap: round;\n}\n.cls-1,\r\n.cls-2 {\r\n  stroke-linejoin: round;\n}\n.cls-1 {\r\n  stroke-width: 1.61px;\n}\n.cls-2,\r\n.cls-3 {\r\n  stroke-width: 1.46px;\n}\n.cls-3 {\r\n  stroke-miterlimit: 10;\n}\r\n", ""]);
 
 // exports
 
@@ -7186,7 +7237,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n#F_Menu[data-v-0b18414f] {\r\n  width: 100%;\r\n  /* height: 8%; */\r\n  border-top: solid 2px #dcdcdc;\r\n  position: absolute;\r\n  z-index: 0;\r\n  bottom: 0;\n}\n.nav-list[data-v-0b18414f] {\r\n  list-style-type: none;\r\n  padding: 0;\r\n  margin: 0;\r\n  width: 100%;\r\n  height: 100%;\n}\n.nav-list_child[data-v-0b18414f] {\r\n  display: inline-block;\r\n  /* margin-right: 15%; */\r\n  width: 30%;\r\n  height: 100%;\n}\n.nav-list_child[data-v-0b18414f]:nth-of-type(2) {\r\n  width: 37%;\r\n  border-right: solid 1.5px #dcdcdc;\r\n  border-left: solid 1.5px #dcdcdc;\n}\na[data-v-0b18414f] {\r\n  display: block;\r\n  width: 100%;\r\n  height: 100%;\r\n  padding: 10px 35%;\r\n  font-size: 10px;\n}\r\n", ""]);
+exports.push([module.i, "\n#F_Menu[data-v-0b18414f] {\r\n  width: 100%;\r\n  /* height: 8%; */\r\n  background-color: #f6f6f6;\r\n  position: absolute;\r\n  z-index: 0;\r\n  bottom: 0;\n}\n.nav-add-button[data-v-0b18414f] {\r\n  width: 3.5em;\r\n  height: 3.5em;\r\n  border-radius: 50%;\r\n  background-color: #ff6e4b;\r\n  position: fixed;\r\n  right: 5%;\r\n  bottom: 9%;\n}\n.nav-list[data-v-0b18414f] {\r\n  list-style-type: none;\r\n  border-top: solid 2px #e8e8e8;\r\n  padding: 0;\r\n  margin: 0;\r\n  width: 100%;\r\n  height: 100%;\n}\n.nav-list_child[data-v-0b18414f] {\r\n  display: inline-block;\r\n  /* margin-right: 15%; */\r\n  width: 30%;\r\n  height: 100%;\n}\n.nav-list_child[data-v-0b18414f]:nth-of-type(2) {\r\n  width: 37%;\r\n  border-right: solid 1.5px #e8e8e8;\r\n  border-left: solid 1.5px #e8e8e8;\n}\na[data-v-0b18414f] {\r\n  display: block;\r\n  width: 100%;\r\n  height: 100%;\r\n  padding: 10px 35%;\r\n  /* font-size: 10px; */\n}\n@media screen and (min-width: 1024px) {\n#F_Menu[data-v-0b18414f] {\r\n    top: 50px;\r\n    height: 100%;\r\n    width: 6%;\r\n    position: fixed;\r\n    border-top: none;\r\n    border-right: solid 2px #e8e8e8;\r\n    padding: 0px;\n}\n.nav-add-button[data-v-0b18414f] {\r\n    left: 0.8%;\n}\n.nav-list[data-v-0b18414f] {\r\n    flex-direction: column;\r\n    width: 100%;\n}\n.nav-list_child[data-v-0b18414f] {\r\n    width: 100%;\r\n    height: 10%;\n}\n.nav-list_child[data-v-0b18414f]:nth-of-type(2) {\r\n    width: 100%;\n}\na[data-v-0b18414f] {\r\n    display: block;\r\n    padding: 30%;\r\n    /* font-size: 10px; */\n}\n}\r\n", ""]);
 
 // exports
 
@@ -40271,7 +40322,7 @@ var render = function() {
         id: "レイヤー_1",
         "data-name": "レイヤー 1",
         xmlns: "http://www.w3.org/2000/svg",
-        viewBox: "0 0 50 41.49"
+        viewBox: "-5 0 50 41.49"
       }
     },
     [
@@ -40850,60 +40901,57 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "add-button" },
-    [
-      _c("router-link", { attrs: { to: "/add-form" } }, [_c("Add-icon")], 1),
+  return _c("div", [
+    _c("nav", { attrs: { id: "F_Menu" } }, [
+      _c(
+        "div",
+        { staticClass: "nav-add-button" },
+        [
+          _c("router-link", { attrs: { to: "/add-form" } }, [_c("Add-icon")], 1)
+        ],
+        1
+      ),
       _vm._v(" "),
-      _c("nav", { attrs: { id: "F_Menu" } }, [
-        _c("ul", { staticClass: "nav-list" }, [
-          _c(
-            "li",
-            { staticClass: "nav-list_child" },
-            [
-              _c(
-                "router-link",
-                { attrs: { to: "/setting" } },
-                [_c("Setting-icon")],
-                1
-              )
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "li",
-            { staticClass: "nav-list_child" },
-            [
-              _c(
-                "router-link",
-                { attrs: { to: "/score" } },
-                [_c("List-icon")],
-                1
-              )
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "li",
-            { staticClass: "nav-list_child" },
-            [
-              _c(
-                "router-link",
-                { attrs: { to: "/notice" } },
-                [_c("Notice-icon")],
-                1
-              )
-            ],
-            1
-          )
-        ])
+      _c("ul", { staticClass: "nav-list" }, [
+        _c(
+          "li",
+          { staticClass: "nav-list_child" },
+          [
+            _c(
+              "router-link",
+              { attrs: { to: "/setting" } },
+              [_c("Setting-icon")],
+              1
+            )
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "li",
+          { staticClass: "nav-list_child" },
+          [
+            _c("router-link", { attrs: { to: "/score" } }, [_c("List-icon")], 1)
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "li",
+          { staticClass: "nav-list_child" },
+          [
+            _c(
+              "router-link",
+              { attrs: { to: "/notice" } },
+              [_c("Notice-icon")],
+              1
+            )
+          ],
+          1
+        )
       ])
-    ],
-    1
-  )
+    ])
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -60342,8 +60390,8 @@ var store = new vuex__WEBPACK_IMPORTED_MODULE_1__["default"].Store({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\mynam\Graduation-Work\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\mynam\Graduation-Work\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Graduation-Work\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Graduation-Work\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
