@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="z-index">
-      <Return-button />
+      <Back-button />
       <h2>{{ $route.name }}</h2>
       <Entry-button
         v-if="$route.name == '棚の設定' || $route.name == '楽曲追加'"
