@@ -31,4 +31,7 @@ h2 {
 a {
   font-size: 1rem;
 }
+li {
+  list-style-type: none;
+}
 </style>
