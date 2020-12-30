@@ -1,10 +1,3 @@
 <template>
-  <p>戻る</p>
+  <div></div>
 </template>
-
-<style scoped>
-p {
-  margin: 0;
-  position: absolute;
-}
-</style>

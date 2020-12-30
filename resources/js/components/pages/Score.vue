@@ -1,15 +1,13 @@
 <template>
   <div>
-    <Clowd-box />
-    <ol>
-      <li><router-link to="details">ジャンル</router-link></li>
-      <li><router-link to="details">ジャンル</router-link></li>
-      <li><router-link to="details">ジャンル</router-link></li>
-      <li><router-link to="details">ジャンル</router-link></li>
-      <li><router-link to="details">ジャンル</router-link></li>
-    </ol>
+    <ul>
+      <li v-for="scorejenle in scorejenles" :key="scorejenle.id">
+        <router-link to="/score-details"><Clowd-box /></router-link>
+        <h3>{{ scorejenle.name }}</h3>
+        <!-- scorejenleの配列はバックからもってくる -->
+      </li>
+    </ul>
     <Score-list />
-    <router-link to="add-form">form</router-link>
   </div>
 </template>
 <style scoped>
@@ -24,7 +22,7 @@ h1 {
   text-align: center;
 }
 
-ol {
+ul {
   scroll-snap-type: x mandatory;
   white-space: nowrap;
   overflow: auto;
@@ -54,7 +52,13 @@ li > a {
 export default {
   data: function () {
     return {
+      name: "#app",
       scorelists: [],
+      scorejenles: [
+        { id: 1, name: "aiu" },
+        { id: 2, name: "eo" },
+        { id: 3, name: "kaki" },
+      ],
     };
   },
   methods: {
