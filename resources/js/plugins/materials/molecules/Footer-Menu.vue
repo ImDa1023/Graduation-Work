@@ -1,25 +1,27 @@
 <template>
   <div>
-    <nav id="F_Menu">
-      <div class="nav-add-button">
-        <router-link to="/add-form">
-          <Add-icon />
-        </router-link>
-      </div>
+    <nav id="footer">
       <ul class="nav-list">
-        <li class="nav-list_child">
-          <router-link to="/setting">
+        <li class="nav-list__child">
+          <router-link to="/setting" class="button__link">
             <Setting-icon />
           </router-link>
         </li>
-        <li class="nav-list_child">
-          <router-link to="/score">
+
+        <li class="nav-list__child">
+          <router-link to="/score" class="button__link">
             <List-icon />
           </router-link>
         </li>
-        <li class="nav-list_child">
-          <router-link to="/notice">
+
+        <li class="nav-list__child">
+          <router-link to="/notice" class="button__link">
             <Notice-icon />
+          </router-link>
+        </li>
+        <li class="nav-add-button">
+          <router-link to="/add-form">
+            <Add-icon />
           </router-link>
         </li>
       </ul>
@@ -28,59 +30,55 @@
 </template>
 
 <style scoped>
-#F_Menu {
+#footer {
   width: 100%;
-  /* height: 8%; */
   background-color: #f6f6f6;
   position: absolute;
   z-index: 0;
   bottom: 0;
 }
 
-.nav-add-button {
-  width: 3.5em;
-  height: 3.5em;
-  border-radius: 50%;
-  background-color: #ff6e4b;
-  position: fixed;
-  right: 5%;
-  bottom: 9%;
-}
-
 .nav-list {
-  list-style-type: none;
-  border-top: solid 2px #e8e8e8;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: flex-end;
   padding: 0;
   margin: 0;
   width: 100%;
   height: 100%;
 }
-
-.nav-list_child {
-  display: inline-block;
-  /* margin-right: 15%; */
+.nav-list__child {
+  border-top: solid 2px #e8e8e8;
   width: 30%;
   height: 100%;
+  padding: 10px;
+  text-align: center;
 }
 
-.nav-list_child:nth-of-type(2) {
+.nav-list__child:nth-of-type(2) {
   width: 37%;
   border-right: solid 1.5px #e8e8e8;
   border-left: solid 1.5px #e8e8e8;
 }
 
-a {
-  display: block;
+.button__link {
+  /* display: block; */
   width: 100%;
   height: 100%;
-  padding: 10px 35%;
-  /* font-size: 10px; */
+  align-self: center;
+}
+
+.nav-add-button {
+  align-self: center;
+  margin: 3%;
+  margin-left: auto;
 }
 
 @media screen and (min-width: 1024px) {
-  #F_Menu {
+  #footer {
     top: 50px;
-    height: 100%;
+    height: 93%;
     width: 6%;
     position: fixed;
     border-top: none;
@@ -88,28 +86,33 @@ a {
     padding: 0px;
   }
 
-  .nav-add-button {
-    left: 0.8%;
-  }
-
   .nav-list {
     flex-direction: column;
+
     width: 100%;
   }
 
-  .nav-list_child {
+  .nav-list__child {
+    border-top: none;
     width: 100%;
     height: 10%;
+    flex-grow: 0;
   }
 
-  .nav-list_child:nth-of-type(2) {
+  .nav-list__child:nth-of-type(2) {
     width: 100%;
   }
 
-  a {
+  .button__link {
     display: block;
-    padding: 30%;
-    /* font-size: 10px; */
+    padding: 20%;
+  }
+
+  .nav-add-button {
+    margin: 0;
+    margin-top: auto;
+    /* flex-basis: 20%; */
+    /* margin-top: 50px; */
   }
 }
 </style>
