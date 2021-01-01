@@ -4,10 +4,14 @@
   </div>
 </template>
 <style scoped>
-/* #add-icon {
-  position: inline-block;
-} */
-
+#add-icon {
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 50%;
+  background-color: #ff6e4b;
+  position: relative;
+  padding: 0;
+}
 #icon {
   position: absolute;
   top: 50%;
