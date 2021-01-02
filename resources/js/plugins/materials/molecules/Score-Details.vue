@@ -1,6 +1,17 @@
 <template>
   <div class="details">
-    <h1>details page</h1>
+    <Use-list-button />
+    <Return-button />
+    <div>
+      <h3>{{ song[0].title }}</h3>
+      <ul>
+        <li>{{ song[0].artist }}</li>
+        <li>{{ song[0].publisher }}</li>
+        <li>{{ song[0].composer }}</li>
+        <li>{{ song[0].arranger }}</li>
+        <li>{{ song[0].id }}</li>
+      </ul>
+    </div>
   </div>
 </template>
 <style scoped>
@@ -13,3 +24,12 @@
   background-color: #f6f6f6;
 }
 </style>
+<script>
+export default {
+  props: {
+    song: {
+      type: Array,
+    },
+  },
+};
+</script>
