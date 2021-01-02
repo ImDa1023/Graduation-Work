@@ -8,6 +8,8 @@ import Notice from './components/pages/Notice.vue'
 import Add_Form from './components/pages/Add-Form.vue'
 import NotFound from './components/pages/NotFound.vue'
 import Score_Details from './plugins/materials/molecules/Score-Details.vue'
+import Genre from './components/pages/Genre.vue'
+import List_Edit from './components/pages/List-Edit.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -49,7 +51,17 @@ const routes = [
       path: '/score-details',
       name: '楽曲詳細',
       component: Score_Details
-    },
+  },
+  {
+    path: '/genre',
+    name: '楽曲リスト',
+    component: Genre
+  },
+  {
+    path: '/list-edit',
+    name: 'リスト編集',
+    component: List_Edit
+  }
 ]
 
 const router = new VueRouter({
