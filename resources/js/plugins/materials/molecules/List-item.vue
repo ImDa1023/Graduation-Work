@@ -10,8 +10,12 @@
       "
     >
       <li class="song">{{ scorelist.title }}</li>
+      <li class="song">{{ scorelist.composer }}</li>
+      <li class="song">{{ scorelist.arranger }}</li>
+      <li class="song">{{ scorelist.publisher }}</li>
+      <li class="song">{{ scorelist.genre }}</li>
       <li class="song">{{ scorelist.artist }}</li>
-      <li class="song">{{ scorelist.id }}</li>
+      <li class="song">{{ scorelist.shelf }} - {{ scorelist.shelfNum }}</li>
     </ul>
     <Score-Details
       class="Accordion-Item"

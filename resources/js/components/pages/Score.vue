@@ -1,9 +1,9 @@
 <template>
   <div>
     <ul>
-      <li v-for="(scorejenle, index) in scorejenles" :key="scorejenle.id">
+      <li v-for="(scorelist, index) in scorelists" :key="scorelist.id">
         <router-link to="/genre"><Clowd-box /></router-link>
-        <h3>{{ scorejenle.name }}{{ index }}</h3>
+        <h3>{{ scorelist.genre }}</h3>
         <!-- scorejenleの配列はバックからもってくる -->
       </li>
     </ul>
