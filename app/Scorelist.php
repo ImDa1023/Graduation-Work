@@ -13,5 +13,8 @@ class Scorelist extends Model
         'composer',
         'arranger',
         'publisher',
+        'genre',
+        'shelf',
+        'shelfNum',
     ];
 }

@@ -20,6 +20,9 @@ class CreateScorelistsTable extends Migration
             $table->string('composer');
             $table->string('arranger');
             $table->string('publisher');
+            $table->string('genre');
+            $table->string('shelf');
+            $table->string('shelfNum');
             $table->timestamps();
         });
     }
