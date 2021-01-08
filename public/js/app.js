@@ -2068,9 +2068,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -7235,7 +7232,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.form-container[data-v-793ca226] {\r\n  margin-top: 20px;\r\n  border-bottom: solid 1px #d0d3e2;\r\n  background: #f6f6f6;\r\n  display: grid;\r\n  grid-template-columns: 1fr 3fr;\n}\nlabel[data-v-793ca226] {\r\n  display: inline-block;\r\n  color: #101748;\r\n  font-size: 13px;\r\n  font-weight: 600;\r\n  margin-bottom: 0;\n}\ninput[type=\"text\"][data-v-793ca226] {\r\n  width: 100%;\r\n  height: 30px;\r\n  padding-bottom: 10px;\r\n  border: none;\r\n  outline: none;\r\n  text-align: right;\r\n  background: none;\r\n  color: #101748;\r\n  font-weight: 600;\n}\ninput[data-v-793ca226]::-moz-placeholder {\r\n  color: #d0d3e2;\n}\ninput[data-v-793ca226]:-ms-input-placeholder {\r\n  color: #d0d3e2;\n}\ninput[data-v-793ca226]::placeholder {\r\n  color: #d0d3e2;\n}\n.rack-box[data-v-793ca226] {\r\n  display: grid;\r\n  grid-template-columns: 1fr 1fr;\n}\n.colmun-2[data-v-793ca226] {\r\n  margin: 20px;\n}\n@media screen and (min-width: 1024px) {\n.form-container[data-v-793ca226] {\r\n    margin-top: 30px;\n}\nlabel[data-v-793ca226] {\r\n    font-size: 15px;\r\n    font-weight: 500;\r\n    padding-bottom: 10px;\n}\n.form-box[data-v-793ca226] {\r\n    display: grid;\r\n    grid-template-columns: 1fr 1fr;\n}\n}\r\n", ""]);
+exports.push([module.i, "\n.form-box[data-v-793ca226] {\r\n  margin-top: 20px;\r\n  border-bottom: solid 1px #d0d3e2;\r\n  background: #f6f6f6;\r\n  display: grid;\r\n  grid-template-columns: 1fr 3fr;\n}\nlabel[data-v-793ca226] {\r\n  display: inline-block;\r\n  color: #101748;\r\n  font-size: 13px;\r\n  font-weight: 600;\r\n  margin-bottom: 0;\n}\ninput[type=\"text\"][data-v-793ca226] {\r\n  width: 100%;\r\n  height: 30px;\r\n  padding-bottom: 10px;\r\n  border: none;\r\n  outline: none;\r\n  text-align: right;\r\n  background: none;\r\n  color: #101748;\r\n  font-weight: 600;\n}\ninput[data-v-793ca226]::-moz-placeholder {\r\n  color: #d0d3e2;\n}\ninput[data-v-793ca226]:-ms-input-placeholder {\r\n  color: #d0d3e2;\n}\ninput[data-v-793ca226]::placeholder {\r\n  color: #d0d3e2;\n}\n.rack-box[data-v-793ca226] {\r\n  display: grid;\r\n  grid-template-columns: 1fr 1fr;\n}\n.colmun-2[data-v-793ca226] {\r\n  margin: 20px;\n}\n@media screen and (min-width: 1024px) {\n.form-box[data-v-793ca226] {\r\n    margin-top: 30px;\n}\nlabel[data-v-793ca226] {\r\n    font-size: 15px;\r\n    font-weight: 500;\r\n    padding-bottom: 10px;\n}\n.form-container[data-v-793ca226] {\r\n    display: grid;\r\n    grid-template-columns: 1fr 1fr;\n}\n}\r\n", ""]);
 
 // exports
 
@@ -40064,9 +40061,9 @@ var render = function() {
           }
         },
         [
-          _c("div", { staticClass: "form-box" }, [
+          _c("div", { staticClass: "form-container" }, [
             _c("div", { staticClass: "column-1" }, [
-              _c("div", { staticClass: "form-container" }, [
+              _c("div", { staticClass: "form-box" }, [
                 _c("label", { attrs: { for: "title" } }, [_vm._v("曲名")]),
                 _vm._v(" "),
                 _c("input", {
@@ -40091,7 +40088,7 @@ var render = function() {
                 })
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "form-container" }, [
+              _c("div", { staticClass: "form-box" }, [
                 _c("label", { attrs: { for: "title" } }, [_vm._v("作曲者")]),
                 _vm._v(" "),
                 _c("input", {
@@ -40120,7 +40117,7 @@ var render = function() {
                 })
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "form-container" }, [
+              _c("div", { staticClass: "form-box" }, [
                 _c("label", { attrs: { for: "title" } }, [_vm._v("編曲者")]),
                 _vm._v(" "),
                 _c("input", {
@@ -40149,7 +40146,7 @@ var render = function() {
                 })
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "form-container" }, [
+              _c("div", { staticClass: "form-box" }, [
                 _c("label", { attrs: { for: "title" } }, [_vm._v("出版社")]),
                 _vm._v(" "),
                 _c("input", {
@@ -40178,7 +40175,7 @@ var render = function() {
                 })
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "form-container" }, [
+              _c("div", { staticClass: "form-box" }, [
                 _c("label", { attrs: { for: "title" } }, [_vm._v("ジャンル")]),
                 _vm._v(" "),
                 _c("input", {
@@ -40203,7 +40200,7 @@ var render = function() {
                 })
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "form-container" }, [
+              _c("div", { staticClass: "form-box" }, [
                 _c("label", { attrs: { for: "title" } }, [
                   _vm._v("アーティスト")
                 ]),
@@ -40235,7 +40232,7 @@ var render = function() {
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "rack-box" }, [
-                _c("div", { staticClass: "form-container" }, [
+                _c("div", { staticClass: "form-box" }, [
                   _c("label", { attrs: { for: "title" } }, [_vm._v("棚")]),
                   _vm._v(" "),
                   _c("input", {
@@ -40260,7 +40257,7 @@ var render = function() {
                   })
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "form-container" }, [
+                _c("div", { staticClass: "form-box" }, [
                   _c("label", { attrs: { for: "title" } }, [_vm._v("―")]),
                   _vm._v(" "),
                   _c("input", {

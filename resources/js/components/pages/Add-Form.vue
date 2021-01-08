@@ -1,13 +1,10 @@
 <template>
   <div class="add-form">
     <div>
-      <!--class="row justify-content-center" -->
-
-      <!-- class="col-sm-6" -->
       <form v-on:submit.prevent="submit">
-        <div class="form-box">
+        <div class="form-container">
           <div class="column-1">
-            <div class="form-container">
+            <div class="form-box">
               <label for="title">曲名</label>
               <input
                 type="text"
@@ -17,7 +14,7 @@
               />
             </div>
 
-            <div class="form-container">
+            <div class="form-box">
               <label for="title">作曲者</label>
               <input
                 type="text"
@@ -27,7 +24,7 @@
               />
             </div>
 
-            <div class="form-container">
+            <div class="form-box">
               <label for="title">編曲者</label>
               <input
                 type="text"
@@ -37,7 +34,7 @@
               />
             </div>
 
-            <div class="form-container">
+            <div class="form-box">
               <label for="title">出版社</label>
               <input
                 type="text"
@@ -47,7 +44,7 @@
               />
             </div>
 
-            <div class="form-container">
+            <div class="form-box">
               <label for="title">ジャンル</label>
               <input
                 type="text"
@@ -57,7 +54,7 @@
               />
             </div>
 
-            <div class="form-container">
+            <div class="form-box">
               <label for="title">アーティスト</label>
               <input
                 type="text"
@@ -68,7 +65,7 @@
             </div>
 
             <div class="rack-box">
-              <div class="form-container">
+              <div class="form-box">
                 <label for="title">棚</label>
                 <input
                   type="text"
@@ -79,7 +76,7 @@
                 <!-- <p>の</p> -->
               </div>
 
-              <div class="form-container">
+              <div class="form-box">
                 <label for="title">―</label>
                 <input
                   type="text"
@@ -102,7 +99,7 @@
 </template>
 
 <style scoped>
-.form-container {
+.form-box {
   margin-top: 20px;
   border-bottom: solid 1px #d0d3e2;
   background: #f6f6f6;
@@ -144,7 +141,7 @@ input::placeholder {
 }
 
 @media screen and (min-width: 1024px) {
-  .form-container {
+  .form-box {
     margin-top: 30px;
   }
 
@@ -154,7 +151,7 @@ input::placeholder {
     padding-bottom: 10px;
   }
 
-  .form-box {
+  .form-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
