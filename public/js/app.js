@@ -2446,6 +2446,32 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2458,21 +2484,7 @@ __webpack_require__.r(__webpack_exports__);
       this.isOpened = !this.isOpened;
       this.isAnime = !this.isAnime; // console.log("1");
     }
-  } // data() {
-  //   var tamesi = $route.name;
-  //   return {
-  //     titleName: tamesi,
-  //   };
-  // },
-  // props: {
-  //   titleName: {
-  //     type: String,
-  //     setting: {
-  //       title: "管理",
-  //     },
-  //   },
-  // },
-
+  }
 });
 
 /***/ }),
@@ -7096,7 +7108,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "\nbody {\r\n  background-color: #f6f6f6;\n}\nh1 {\r\n  font-size: 1rem;\n}\nh2 {\r\n  font-size: 1rem;\r\n  color: #101748;\r\n  text-align: center;\r\n  font-family: \"Meylio UI\";\r\n  font-weight: 550;\r\n  letter-spacing: 0.15em;\n}\na {\r\n  font-size: 1rem;\n}\nli {\r\n  list-style-type: none;\n}\r\n", ""]);
+exports.push([module.i, "\nhtml {\r\n  height: 100%;\n}\nbody {\r\n  height: 100%;\r\n  background-color: #f6f6f6;\r\n  margin: 0;\n}\nmain {\r\n  height: 100%;\r\n  overflow: hidden;\n}\nh1 {\r\n  font-size: 1rem;\n}\nh2 {\r\n  font-size: 1rem;\r\n  color: #101748;\r\n  text-align: center;\r\n  font-family: \"Meylio UI\";\r\n  font-weight: 550;\r\n  letter-spacing: 0.15em;\r\n  margin: 0px;\n}\na {\r\n  font-size: 1rem;\n}\nli {\r\n  list-style-type: none;\n}\n@media screen and (min-width: 1024px) {\n#app {\r\n    display: grid;\r\n    width: 100%;\r\n    grid-template-areas:\r\n      \"hed hed hed\"\r\n      \"fot wap wap\";\r\n    grid-template-rows: 55px 1fr;\r\n    grid-template-columns: 80px 1fr;\n}\n#app > header {\r\n    grid-area: hed;\n}\n#app > main {\r\n    grid-area: wap;\n}\n#app > footer {\r\n    grid-area: fot;\n}\n}\r\n", ""]);
 
 // exports
 
@@ -7401,7 +7413,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n.header-box[data-v-79a09bc2] {\r\n  width: 100%;\r\n  height: 55px;\n}\n.inner__title[data-v-79a09bc2] {\r\n  margin-top: auto;\n}\n.box-inner[data-v-79a09bc2] {\r\n  height: 55px;\r\n  position: relative;\r\n  z-index: 1;\r\n  background-color: #f6f6f6;\n}\n.back__icon[data-v-79a09bc2] {\r\n  position: absolute;\r\n  left: 20px;\r\n  top: 16px;\n}\n.Accordion-Item[data-v-79a09bc2] {\r\n  width: 100%;\r\n  height: 70px;\r\n  background: #f6f6f6;\r\n  transition: all 300ms 0s ease;\r\n  position: relative;\r\n  /* top: -200px; */\r\n  /* z-index: -10; */\r\n  border: 1px solid;\n}\n.transform[data-v-79a09bc2] {\r\n  transform: translateY(-70px);\r\n  /* opacity: 0; */\n}\n.icon-button[data-v-79a09bc2] {\r\n  width: 40px;\r\n  height: 40px;\r\n  position: absolute;\r\n  top: 7px;\r\n  right: 10px;\r\n  border: 0;\r\n  background-color: #f6f6f6;\r\n  z-index: 2;\n}\r\n/* \r\n@keyframes accordion {\r\n  from {\r\n    transform: translateY(-70px);\r\n    z-index: -20;\r\n  }\r\n\r\n  to {\r\n    transform: translateY(5px);\r\n    z-index: 1;\r\n  }\r\n} */\r\n", ""]);
+exports.push([module.i, "\n.header-box[data-v-79a09bc2] {\r\n  width: 100%;\r\n  height: 55px;\n}\n.inner__title[data-v-79a09bc2] {\r\n  margin-top: auto;\n}\n.box-inner[data-v-79a09bc2] {\r\n  height: 55px;\r\n  position: relative;\r\n  z-index: 1;\r\n  background-color: #f6f6f6;\r\n  border-bottom: solid 2px #e8e8e8;\n}\n.back__icon[data-v-79a09bc2] {\r\n  position: absolute;\r\n  left: 20px;\r\n  top: 16px;\n}\n.accbox[data-v-79a09bc2] {\r\n  width: 40px;\r\n  height: 40px;\r\n  position: absolute;\r\n  top: 7px;\r\n  right: 13px;\r\n  border: 0;\r\n  background-color: #f6f6f6;\r\n  z-index: 2;\n}\nlabel[data-v-79a09bc2] {\r\n  /* width: 100%;\r\n  height: 100%; */\r\n  display: block;\r\n  cursor: pointer;\r\n  padding: 3px 6px;\r\n  transition: all 0.5s ease-in;\r\n  z-index: 2;\n}\n.accbox-icon[data-v-79a09bc2] {\r\n  width: 100%;\r\n  height: 100%;\r\n  position: relative;\r\n  z-index: 2;\n}\n.accbox-input[data-v-79a09bc2] {\r\n  display: none;\n}\n.form-inner[data-v-79a09bc2] {\r\n  width: 100%;\r\n  height: 70px;\r\n  position: absolute;\r\n  background: #efefef;\r\n  overflow: hidden;\r\n  opacity: 0;\r\n  transition: 0.3s;\r\n  z-index: 2;\n}\n.accbox-input:checked + .form-inner[data-v-79a09bc2] {\r\n  opacity: 1;\n}\r\n\r\n/* .transform {\r\n  transform: translateY(-70px);\r\n\r\n  opacity: 0;\r\n} */\r\n\r\n/* @keyframes accordion {\r\n  from {\r\n    transform: translateY(-70px);\r\n    z-index: -20;\r\n  }\r\n\r\n  to {\r\n    transform: translateY(5px);\r\n    z-index: 1;\r\n  }\r\n} */\r\n", ""]);
 
 // exports
 
@@ -41222,24 +41234,16 @@ var render = function() {
       ? _c(
           "div",
           [
-            _c(
-              "button",
-              {
-                staticClass: "icon-button",
-                on: {
-                  click: function($event) {
-                    return _vm.toggleAccordion()
-                  }
-                }
-              },
-              [_c("Search-icon")],
-              1
-            ),
+            _c("div", { staticClass: "accbox" }, [
+              _c("label", { attrs: { for: "check" } }, [_c("Search-icon")], 1)
+            ]),
             _vm._v(" "),
-            _c("Search-form-inner", {
-              staticClass: "Accordion-Item",
-              class: { transform: _vm.isOpened }
-            })
+            _c("input", {
+              staticClass: "accbox-input",
+              attrs: { type: "checkbox", id: "check" }
+            }),
+            _vm._v(" "),
+            _c("Search-form-inner")
           ],
           1
         )
@@ -60771,8 +60775,8 @@ var store = new vuex__WEBPACK_IMPORTED_MODULE_1__["default"].Store({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\daiki\LaravelWork\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\daiki\LaravelWork\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Graduation-Work\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Graduation-Work\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
