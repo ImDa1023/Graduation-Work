@@ -3,13 +3,13 @@
     <Use-list-button />
     <Return-button />
     <div>
-      <h3>{{ song[0].title }}</h3>
+      <h3>{{ song[index.number].title }}</h3>
       <ul>
-        <li>{{ song[0].artist }}</li>
-        <li>{{ song[0].publisher }}</li>
-        <li>{{ song[0].composer }}</li>
-        <li>{{ song[0].arranger }}</li>
-        <li>{{ song[0].id }}</li>
+        <li>{{ song[index.number].artist }}</li>
+        <li>{{ song[index.number].publisher }}</li>
+        <li>{{ song[index.number].composer }}</li>
+        <li>{{ song[index.number].arranger }}</li>
+        <li>{{ song[index.number].id }}</li>
       </ul>
     </div>
   </div>
@@ -29,6 +29,9 @@ export default {
   props: {
     song: {
       type: Array,
+    },
+    index: {
+      type: Object,
     },
   },
 };
