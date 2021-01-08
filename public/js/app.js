@@ -1953,6 +1953,124 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -1963,9 +2081,9 @@ __webpack_require__.r(__webpack_exports__);
     submit: function submit() {
       var _this = this;
 
-      axios.post('/api/scores', this.scorelist).then(function (res) {
+      axios.post("/api/scores", this.scorelist).then(function (res) {
         _this.$router.push({
-          path: '/score'
+          path: "/score"
         });
       });
     }
@@ -7098,7 +7216,26 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "\nhtml {\r\n  height: 100%;\n}\nbody {\r\n  height: 100%;\r\n  background-color: #f6f6f6;\r\n  margin: 0;\n}\nmain {\r\n  height: 100%;\r\n  overflow: hidden;\n}\nh1 {\r\n  font-size: 1rem;\n}\nh2 {\r\n  font-size: 1rem;\r\n  color: #101748;\r\n  text-align: center;\r\n  font-family: \"Meylio UI\";\r\n  font-weight: 550;\r\n  letter-spacing: 0.15em;\r\n  margin: 0px;\n}\na {\r\n  font-size: 1rem;\n}\nli {\r\n  list-style-type: none;\n}\n@media screen and (min-width: 1024px) {\n#app {\r\n    display: grid;\r\n    width: 100%;\r\n    grid-template-areas:\r\n      \"hed hed hed\"\r\n      \"fot wap wap\";\r\n    grid-template-rows: 55px 1fr;\r\n    grid-template-columns: 80px 1fr;\n}\n#app > header {\r\n    grid-area: hed;\n}\n#app > main {\r\n    grid-area: wap;\n}\n#app > footer {\r\n    grid-area: fot;\n}\n}\r\n", ""]);
+exports.push([module.i, "\nhtml {\r\n  height: 100%;\n}\nbody {\r\n  height: 100%;\r\n  background-color: #f6f6f6;\r\n  margin: 0;\n}\nmain {\r\n  height: 100%;\r\n  overflow: hidden;\r\n  margin: 0 30px ;\n}\nh1 {\r\n  font-size: 1rem;\n}\nh2 {\r\n  font-size: 1rem;\r\n  color: #101748;\r\n  text-align: center;\r\n  font-family: \"Meylio UI\";\r\n  font-weight: 550;\r\n  letter-spacing: 0.15em;\r\n  margin: 0px;\n}\na {\r\n  font-size: 1rem;\n}\nli {\r\n  list-style-type: none;\n}\n@media screen and (min-width: 1024px) {\n#app {\r\n    display: grid;\r\n    width: 100%;\r\n    grid-template-areas:\r\n      \"hed hed hed\"\r\n      \"fot wap wap\";\r\n    grid-template-rows: 55px 1fr;\r\n    grid-template-columns: 80px 1fr;\n}\n#app > header {\r\n    grid-area: hed;\n}\n#app > main {\r\n    grid-area: wap;\n}\n#app > footer {\r\n    grid-area: fot;\n}\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/Add-Form.vue?vue&type=style&index=0&id=793ca226&scoped=true&lang=css&":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/pages/Add-Form.vue?vue&type=style&index=0&id=793ca226&scoped=true&lang=css& ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.form-container[data-v-793ca226] {\r\n  margin-top: 20px;\r\n  border-bottom: solid 1px #d0d3e2;\r\n  background: #f6f6f6;\r\n  display: grid;\r\n  grid-template-columns: 1fr 3fr;\n}\nlabel[data-v-793ca226] {\r\n  display: inline-block;\r\n  color: #101748;\r\n  font-size: 13px;\r\n  font-weight: 600;\r\n  margin-bottom: 0;\n}\ninput[type=\"text\"][data-v-793ca226] {\r\n  width: 100%;\r\n  height: 30px;\r\n  padding-bottom: 10px;\r\n  border: none;\r\n  outline: none;\r\n  text-align: right;\r\n  background: none;\r\n  color: #101748;\r\n  font-weight: 600;\n}\ninput[data-v-793ca226]::-moz-placeholder {\r\n  color: #d0d3e2;\n}\ninput[data-v-793ca226]:-ms-input-placeholder {\r\n  color: #d0d3e2;\n}\ninput[data-v-793ca226]::placeholder {\r\n  color: #d0d3e2;\n}\n.rack-box[data-v-793ca226] {\r\n  display: grid;\r\n  grid-template-columns: 1fr 1fr;\n}\n.colmun-2[data-v-793ca226] {\r\n  margin: 20px;\n}\n@media screen and (min-width: 1024px) {\n.form-container[data-v-793ca226] {\r\n    margin-top: 30px;\n}\nlabel[data-v-793ca226] {\r\n    font-size: 15px;\r\n    font-weight: 500;\r\n    padding-bottom: 10px;\n}\n.form-box[data-v-793ca226] {\r\n    display: grid;\r\n    grid-template-columns: 1fr 1fr;\n}\n}\r\n", ""]);
 
 // exports
 
@@ -38683,6 +38820,36 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/Add-Form.vue?vue&type=style&index=0&id=793ca226&scoped=true&lang=css&":
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/pages/Add-Form.vue?vue&type=style&index=0&id=793ca226&scoped=true&lang=css& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./Add-Form.vue?vue&type=style&index=0&id=793ca226&scoped=true&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/Add-Form.vue?vue&type=style&index=0&id=793ca226&scoped=true&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/Score.vue?vue&type=style&index=0&id=85245028&scoped=true&lang=css&":
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/pages/Score.vue?vue&type=style&index=0&id=85245028&scoped=true&lang=css& ***!
@@ -39869,10 +40036,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/Add-Form.vue?vue&type=template&id=793ca226&":
-/*!*****************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/pages/Add-Form.vue?vue&type=template&id=793ca226& ***!
-  \*****************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/Add-Form.vue?vue&type=template&id=793ca226&scoped=true&":
+/*!*****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/pages/Add-Form.vue?vue&type=template&id=793ca226&scoped=true& ***!
+  \*****************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -39884,236 +40051,268 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [
-    _c("div", { staticClass: "row justify-content-center" }, [
-      _c("div", { staticClass: "col-sm-6" }, [
-        _c(
-          "form",
-          {
-            on: {
-              submit: function($event) {
-                $event.preventDefault()
-                return _vm.submit($event)
-              }
+  return _c("div", { staticClass: "add-form" }, [
+    _c("div", [
+      _c(
+        "form",
+        {
+          on: {
+            submit: function($event) {
+              $event.preventDefault()
+              return _vm.submit($event)
             }
-          },
-          [
-            _c("div", { staticClass: "form-group row" }, [
-              _c("label", { attrs: { for: "title" } }, [_vm._v("曲名")]),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.scorelist.title,
-                    expression: "scorelist.title"
-                  }
-                ],
-                attrs: { type: "text", id: "title" },
-                domProps: { value: _vm.scorelist.title },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
+          }
+        },
+        [
+          _c("div", { staticClass: "form-box" }, [
+            _c("div", { staticClass: "column-1" }, [
+              _c("div", { staticClass: "form-container" }, [
+                _c("label", { attrs: { for: "title" } }, [_vm._v("曲名")]),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.scorelist.title,
+                      expression: "scorelist.title"
                     }
-                    _vm.$set(_vm.scorelist, "title", $event.target.value)
-                  }
-                }
-              })
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "form-group row" }, [
-              _c("label", { attrs: { for: "title" } }, [_vm._v("作曲者")]),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.scorelist.composer,
-                    expression: "scorelist.composer"
-                  }
-                ],
-                attrs: { type: "text", id: "composer" },
-                domProps: { value: _vm.scorelist.composer },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
+                  ],
+                  attrs: { type: "text", placeholder: "曲名", id: "title" },
+                  domProps: { value: _vm.scorelist.title },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.scorelist, "title", $event.target.value)
                     }
-                    _vm.$set(_vm.scorelist, "composer", $event.target.value)
                   }
-                }
-              })
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "form-group row" }, [
-              _c("label", { attrs: { for: "title" } }, [_vm._v("編曲者")]),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.scorelist.arranger,
-                    expression: "scorelist.arranger"
-                  }
-                ],
-                attrs: { type: "text", id: "arranger" },
-                domProps: { value: _vm.scorelist.arranger },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.$set(_vm.scorelist, "arranger", $event.target.value)
-                  }
-                }
-              })
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "form-group row" }, [
-              _c("label", { attrs: { for: "title" } }, [_vm._v("出版社")]),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.scorelist.publisher,
-                    expression: "scorelist.publisher"
-                  }
-                ],
-                attrs: { type: "text", id: "publisher" },
-                domProps: { value: _vm.scorelist.publisher },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.$set(_vm.scorelist, "publisher", $event.target.value)
-                  }
-                }
-              })
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "form-group row" }, [
-              _c("label", { attrs: { for: "title" } }, [_vm._v("ジャンル")]),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.scorelist.genre,
-                    expression: "scorelist.genre"
-                  }
-                ],
-                attrs: { type: "text", id: "genre" },
-                domProps: { value: _vm.scorelist.genre },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.$set(_vm.scorelist, "genre", $event.target.value)
-                  }
-                }
-              })
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "form-group row" }, [
-              _c("label", { attrs: { for: "title" } }, [
-                _vm._v("アーティスト")
+                })
               ]),
               _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.scorelist.artist,
-                    expression: "scorelist.artist"
-                  }
-                ],
-                attrs: { type: "text", id: "artist" },
-                domProps: { value: _vm.scorelist.artist },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
+              _c("div", { staticClass: "form-container" }, [
+                _c("label", { attrs: { for: "title" } }, [_vm._v("作曲者")]),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.scorelist.composer,
+                      expression: "scorelist.composer"
                     }
-                    _vm.$set(_vm.scorelist, "artist", $event.target.value)
+                  ],
+                  attrs: {
+                    type: "text",
+                    placeholder: "作曲者",
+                    id: "composer"
+                  },
+                  domProps: { value: _vm.scorelist.composer },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.scorelist, "composer", $event.target.value)
+                    }
                   }
-                }
-              })
+                })
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "form-container" }, [
+                _c("label", { attrs: { for: "title" } }, [_vm._v("編曲者")]),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.scorelist.arranger,
+                      expression: "scorelist.arranger"
+                    }
+                  ],
+                  attrs: {
+                    type: "text",
+                    placeholder: "編曲者",
+                    id: "arranger"
+                  },
+                  domProps: { value: _vm.scorelist.arranger },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.scorelist, "arranger", $event.target.value)
+                    }
+                  }
+                })
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "form-container" }, [
+                _c("label", { attrs: { for: "title" } }, [_vm._v("出版社")]),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.scorelist.publisher,
+                      expression: "scorelist.publisher"
+                    }
+                  ],
+                  attrs: {
+                    type: "text",
+                    placeholder: "出版社",
+                    id: "publisher"
+                  },
+                  domProps: { value: _vm.scorelist.publisher },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.scorelist, "publisher", $event.target.value)
+                    }
+                  }
+                })
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "form-container" }, [
+                _c("label", { attrs: { for: "title" } }, [_vm._v("ジャンル")]),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.scorelist.genre,
+                      expression: "scorelist.genre"
+                    }
+                  ],
+                  attrs: { type: "text", placeholder: "ジャンル", id: "genre" },
+                  domProps: { value: _vm.scorelist.genre },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.scorelist, "genre", $event.target.value)
+                    }
+                  }
+                })
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "form-container" }, [
+                _c("label", { attrs: { for: "title" } }, [
+                  _vm._v("アーティスト")
+                ]),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.scorelist.artist,
+                      expression: "scorelist.artist"
+                    }
+                  ],
+                  attrs: {
+                    type: "text",
+                    placeholder: "アーティスト",
+                    id: "artist"
+                  },
+                  domProps: { value: _vm.scorelist.artist },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.scorelist, "artist", $event.target.value)
+                    }
+                  }
+                })
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "rack-box" }, [
+                _c("div", { staticClass: "form-container" }, [
+                  _c("label", { attrs: { for: "title" } }, [_vm._v("棚")]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.scorelist.shelf,
+                        expression: "scorelist.shelf"
+                      }
+                    ],
+                    attrs: { type: "text", placeholder: "番号", id: "shelf" },
+                    domProps: { value: _vm.scorelist.shelf },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.scorelist, "shelf", $event.target.value)
+                      }
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-container" }, [
+                  _c("label", { attrs: { for: "title" } }, [_vm._v("―")]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.scorelist.shelfNum,
+                        expression: "scorelist.shelfNum"
+                      }
+                    ],
+                    attrs: {
+                      type: "text",
+                      placeholder: "段数",
+                      id: "shelf-number"
+                    },
+                    domProps: { value: _vm.scorelist.shelfNum },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.scorelist, "shelfNum", $event.target.value)
+                      }
+                    }
+                  })
+                ])
+              ])
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "form-group row" }, [
-              _c("label", { attrs: { for: "title" } }, [_vm._v("棚")]),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.scorelist.shelf,
-                    expression: "scorelist.shelf"
-                  }
-                ],
-                attrs: { type: "text", id: "shelf" },
-                domProps: { value: _vm.scorelist.shelf },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.$set(_vm.scorelist, "shelf", $event.target.value)
-                  }
-                }
-              }),
-              _vm._v(" "),
-              _c("p", [_vm._v("の")])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "form-group row" }, [
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.scorelist.shelfNum,
-                    expression: "scorelist.shelfNum"
-                  }
-                ],
-                attrs: { type: "text", id: "shelf-number" },
-                domProps: { value: _vm.scorelist.shelfNum },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.$set(_vm.scorelist, "shelfNum", $event.target.value)
-                  }
-                }
-              }),
-              _vm._v(" "),
-              _c("p", [_vm._v("段目")])
-            ]),
-            _vm._v(" "),
-            _c(
-              "button",
-              { staticClass: "btn btn-primary", attrs: { type: "submit" } },
-              [_vm._v("登録")]
-            )
-          ]
-        )
-      ])
+            _vm._m(0)
+          ])
+        ]
+      )
     ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "colmun-2" }, [
+      _vm._v("\n          その他の中身\n          "),
+      _c(
+        "button",
+        { staticClass: "btn btn-primary", attrs: { type: "submit" } },
+        [_vm._v("登録")]
+      )
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -40502,30 +40701,20 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    {},
-    [
-      _c(
-        "button",
-        {
-          staticClass: "icon-button",
-          on: {
-            click: function($event) {
-              return _vm.toggleAccordion()
-            }
+  return _c("div", {}, [
+    _c(
+      "button",
+      {
+        staticClass: "icon-button",
+        on: {
+          click: function($event) {
+            return _vm.toggleAccordion()
           }
-        },
-        [_vm._v("登録")]
-      ),
-      _vm._v(" "),
-      _c("Score-Details", {
-        staticClass: "Accordion-Item",
-        class: { tamesi: _vm.isClosed }
-      })
-    ],
-    1
-  )
+        }
+      },
+      [_vm._v("登録")]
+    )
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -58137,9 +58326,11 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Add_Form_vue_vue_type_template_id_793ca226___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Add-Form.vue?vue&type=template&id=793ca226& */ "./resources/js/components/pages/Add-Form.vue?vue&type=template&id=793ca226&");
+/* harmony import */ var _Add_Form_vue_vue_type_template_id_793ca226_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Add-Form.vue?vue&type=template&id=793ca226&scoped=true& */ "./resources/js/components/pages/Add-Form.vue?vue&type=template&id=793ca226&scoped=true&");
 /* harmony import */ var _Add_Form_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Add-Form.vue?vue&type=script&lang=js& */ "./resources/js/components/pages/Add-Form.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _Add_Form_vue_vue_type_style_index_0_id_793ca226_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Add-Form.vue?vue&type=style&index=0&id=793ca226&scoped=true&lang=css& */ "./resources/js/components/pages/Add-Form.vue?vue&type=style&index=0&id=793ca226&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 
 
 
@@ -58147,13 +58338,13 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _Add_Form_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Add_Form_vue_vue_type_template_id_793ca226___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Add_Form_vue_vue_type_template_id_793ca226___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Add_Form_vue_vue_type_template_id_793ca226_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Add_Form_vue_vue_type_template_id_793ca226_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
-  null,
+  "793ca226",
   null
   
 )
@@ -58179,19 +58370,35 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/pages/Add-Form.vue?vue&type=template&id=793ca226&":
-/*!***********************************************************************************!*\
-  !*** ./resources/js/components/pages/Add-Form.vue?vue&type=template&id=793ca226& ***!
-  \***********************************************************************************/
+/***/ "./resources/js/components/pages/Add-Form.vue?vue&type=style&index=0&id=793ca226&scoped=true&lang=css&":
+/*!*************************************************************************************************************!*\
+  !*** ./resources/js/components/pages/Add-Form.vue?vue&type=style&index=0&id=793ca226&scoped=true&lang=css& ***!
+  \*************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Add_Form_vue_vue_type_style_index_0_id_793ca226_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./Add-Form.vue?vue&type=style&index=0&id=793ca226&scoped=true&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/Add-Form.vue?vue&type=style&index=0&id=793ca226&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Add_Form_vue_vue_type_style_index_0_id_793ca226_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Add_Form_vue_vue_type_style_index_0_id_793ca226_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Add_Form_vue_vue_type_style_index_0_id_793ca226_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Add_Form_vue_vue_type_style_index_0_id_793ca226_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+
+
+/***/ }),
+
+/***/ "./resources/js/components/pages/Add-Form.vue?vue&type=template&id=793ca226&scoped=true&":
+/*!***********************************************************************************************!*\
+  !*** ./resources/js/components/pages/Add-Form.vue?vue&type=template&id=793ca226&scoped=true& ***!
+  \***********************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Add_Form_vue_vue_type_template_id_793ca226___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Add-Form.vue?vue&type=template&id=793ca226& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/Add-Form.vue?vue&type=template&id=793ca226&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Add_Form_vue_vue_type_template_id_793ca226___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Add_Form_vue_vue_type_template_id_793ca226_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Add-Form.vue?vue&type=template&id=793ca226&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/Add-Form.vue?vue&type=template&id=793ca226&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Add_Form_vue_vue_type_template_id_793ca226_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Add_Form_vue_vue_type_template_id_793ca226___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Add_Form_vue_vue_type_template_id_793ca226_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -60764,8 +60971,8 @@ var store = new vuex__WEBPACK_IMPORTED_MODULE_1__["default"].Store({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\mynam\Graduation-Work\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\mynam\Graduation-Work\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Graduation-Work\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Graduation-Work\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

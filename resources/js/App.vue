@@ -26,6 +26,7 @@ body {
 main {
   height: 100%;
   overflow: hidden;
+  margin: 0 30px ;
 }
 h1 {
   font-size: 1rem;
@@ -45,6 +46,7 @@ a {
 li {
   list-style-type: none;
 }
+
 
 @media screen and (min-width: 1024px) {
   #app {
