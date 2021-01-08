@@ -4,10 +4,7 @@
       class="song-box"
       v-for="(scorelist, index) in scorelists"
       :key="scorelist.id"
-      @click="
-        toggle();
-        sendindex(index);
-      "
+      @click="toggle(index)"
     >
       <li class="song">{{ scorelist.title }}</li>
       <li class="song">{{ scorelist.composer }}</li>
@@ -21,46 +18,34 @@
       class="Accordion-Item"
       :class="{ transform: isOpened, tamesi: isClosed }"
       :song="scorelists"
+      :index="index"
     >
     </Score-Details>
   </div>
 </template>
 <script>
+var index = { number: 0 };
+
 export default {
   data: function () {
     return {
       scorelists: [],
       isOpened: true,
       isClosed: false,
-      indexlist: [],
-      // tamesi: tamesi,
+      index: index,
     };
   },
-  // computed: {
-  //   song_list: function () {
-  //     for (var i = 0; i < this.scorelists.length; i++) {
-  //       if ((this.scorelists[i].id = this.id)) {
-  //         return this.scorelists[i];
-  //       }
-  //     }
-  //   },
-  // },
   methods: {
     getScorelists() {
       axios.get("/api/scores").then((res) => {
         this.scorelists = res.data;
       });
     },
-    toggle() {
-      // var tamesi = document.querySelectorAll(".song-box");
-      // var tamesi = document.getElementsByClassName("title");
+    toggle(index) {
       this.isOpened = !this.isOpened;
       this.isClosed = !this.isClosed;
       console.log(index);
-      // console.log(tamesi);
-    },
-    sendindex(index) {
-      this.index.push(index);
+      this.index.number = index;
     },
   },
   mounted() {

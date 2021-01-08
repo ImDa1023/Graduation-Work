@@ -2523,27 +2523,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
+var index = {
+  number: 0
+};
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       scorelists: [],
       isOpened: true,
       isClosed: false,
-      indexlist: [] // tamesi: tamesi,
-
+      index: index
     };
   },
-  // computed: {
-  //   song_list: function () {
-  //     for (var i = 0; i < this.scorelists.length; i++) {
-  //       if ((this.scorelists[i].id = this.id)) {
-  //         return this.scorelists[i];
-  //       }
-  //     }
-  //   },
-  // },
   methods: {
     getScorelists: function getScorelists() {
       var _this = this;
@@ -2552,15 +2543,11 @@ __webpack_require__.r(__webpack_exports__);
         _this.scorelists = res.data;
       });
     },
-    toggle: function toggle() {
-      // var tamesi = document.querySelectorAll(".song-box");
-      // var tamesi = document.getElementsByClassName("title");
+    toggle: function toggle(index) {
       this.isOpened = !this.isOpened;
       this.isClosed = !this.isClosed;
-      console.log(index); // console.log(tamesi);
-    },
-    sendindex: function sendindex(index) {
-      this.index.push(index);
+      console.log(index);
+      this.index.number = index;
     }
   },
   mounted: function mounted() {
@@ -2609,6 +2596,9 @@ __webpack_require__.r(__webpack_exports__);
   props: {
     song: {
       type: Array
+    },
+    index: {
+      type: Object
     }
   }
 });
@@ -41284,8 +41274,7 @@ var render = function() {
             staticClass: "song-box",
             on: {
               click: function($event) {
-                _vm.toggle()
-                _vm.sendindex(index)
+                return _vm.toggle(index)
               }
             }
           },
@@ -41326,7 +41315,7 @@ var render = function() {
       _c("Score-Details", {
         staticClass: "Accordion-Item",
         class: { transform: _vm.isOpened, tamesi: _vm.isClosed },
-        attrs: { song: _vm.scorelists }
+        attrs: { song: _vm.scorelists, index: _vm.index }
       })
     ],
     2
@@ -41363,18 +41352,18 @@ var render = function() {
       _c("Return-button"),
       _vm._v(" "),
       _c("div", [
-        _c("h3", [_vm._v(_vm._s(_vm.song[0].title))]),
+        _c("h3", [_vm._v(_vm._s(_vm.song[_vm.index.number].title))]),
         _vm._v(" "),
         _c("ul", [
-          _c("li", [_vm._v(_vm._s(_vm.song[0].artist))]),
+          _c("li", [_vm._v(_vm._s(_vm.song[_vm.index.number].artist))]),
           _vm._v(" "),
-          _c("li", [_vm._v(_vm._s(_vm.song[0].publisher))]),
+          _c("li", [_vm._v(_vm._s(_vm.song[_vm.index.number].publisher))]),
           _vm._v(" "),
-          _c("li", [_vm._v(_vm._s(_vm.song[0].composer))]),
+          _c("li", [_vm._v(_vm._s(_vm.song[_vm.index.number].composer))]),
           _vm._v(" "),
-          _c("li", [_vm._v(_vm._s(_vm.song[0].arranger))]),
+          _c("li", [_vm._v(_vm._s(_vm.song[_vm.index.number].arranger))]),
           _vm._v(" "),
-          _c("li", [_vm._v(_vm._s(_vm.song[0].id))])
+          _c("li", [_vm._v(_vm._s(_vm.song[_vm.index.number].id))])
         ])
       ])
     ],
@@ -60775,8 +60764,8 @@ var store = new vuex__WEBPACK_IMPORTED_MODULE_1__["default"].Store({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Graduation-Work\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Graduation-Work\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\mynam\Graduation-Work\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\mynam\Graduation-Work\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
